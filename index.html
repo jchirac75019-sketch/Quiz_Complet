@@ -4,7 +4,7 @@
     
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>اختبار الآيات القرآنية</title>
-    <link rel="manifest" href="https://ppl-ai-code-interpreter-files.s3.amazonaws.com/web/direct-files/0e7b3ce1acb132ca5f7766150f5d3fb9/5ad29d8a-1f4a-485e-9a0c-b5dc42a9db7f/manifest.json">
+    <link rel="manifest" href="manifest.json">
     <meta name="theme-color" content="#21808d">
     <link rel="apple-touch-icon" href="data:image/svg+xml,%3Csvg xmlns=&#39;http://www.w3.org/2000/svg&#39; viewBox=&#39;0 0 192 192&#39;%3E%3Crect width=&#39;192&#39; height=&#39;192&#39; fill=&#39;%2321808d&#39;/%3E%3Ctext x=&#39;96&#39; y=&#39;120&#39; font-size=&#39;80&#39; text-anchor=&#39;middle&#39; fill=&#39;white&#39; font-family=&#39;Arial&#39;%3E%F0%9F%93%96%3C/text%3E%3C/svg%3E">
     <style>
@@ -2888,16 +2888,17 @@ if (savedFilters) {
         
         // تسجيل Service Worker
         if ('serviceWorker' in navigator) {
-            window.addEventListener('load', function() {
-                navigator.serviceWorker.register('sw.js')
-                    .then(function(registration) {
-                        console.log('SW registered: ', registration);
-                    })
-                    .catch(function(registrationError) {
-                        console.log('SW registration failed: ', registrationError);
-                    });
+    window.addEventListener('load', function () {
+        navigator.serviceWorker.register('service-worker.js')  // <-- Utiliser le fichier existant
+            .then(function (registration) {
+                console.log('Service Worker registered:', registration);
+            })
+            .catch(function (error) {
+                console.log('Service Worker registration failed:', error);
             });
-        }
+    });
+}
+
     </script>
         <div>
           <div class="cb-connect-sidebar-loading-outer">
