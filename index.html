@@ -1,0 +1,2916 @@
+<!DOCTYPE html>
+<!-- saved from url=(0152)https://ppl-ai-code-interpreter-files.s3.amazonaws.com/web/direct-files/0e7b3ce1acb132ca5f7766150f5d3fb9/5ad29d8a-1f4a-485e-9a0c-b5dc42a9db7f/index.html -->
+<html lang="ar" dir="rtl" data-lt-installed="true"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script src="chrome-extension://fgddmllnllkalaagkghckoinaemmogpe/src/scripts/content/location-spoofing.js"></script>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>اختبار الآيات القرآنية</title>
+    <link rel="manifest" href="https://ppl-ai-code-interpreter-files.s3.amazonaws.com/web/direct-files/0e7b3ce1acb132ca5f7766150f5d3fb9/5ad29d8a-1f4a-485e-9a0c-b5dc42a9db7f/manifest.json">
+    <meta name="theme-color" content="#21808d">
+    <link rel="apple-touch-icon" href="data:image/svg+xml,%3Csvg xmlns=&#39;http://www.w3.org/2000/svg&#39; viewBox=&#39;0 0 192 192&#39;%3E%3Crect width=&#39;192&#39; height=&#39;192&#39; fill=&#39;%2321808d&#39;/%3E%3Ctext x=&#39;96&#39; y=&#39;120&#39; font-size=&#39;80&#39; text-anchor=&#39;middle&#39; fill=&#39;white&#39; font-family=&#39;Arial&#39;%3E%F0%9F%93%96%3C/text%3E%3C/svg%3E">
+    <style>
+:root {
+  /* Primitive Color Tokens */
+  --color-white: rgba(255, 255, 255, 1);
+  --color-black: rgba(0, 0, 0, 1);
+  --color-cream-50: rgba(252, 252, 249, 1);
+  --color-cream-100: rgba(255, 255, 253, 1);
+  --color-gray-200: rgba(245, 245, 245, 1);
+  --color-gray-300: rgba(167, 169, 169, 1);
+  --color-gray-400: rgba(119, 124, 124, 1);
+  --color-slate-500: rgba(98, 108, 113, 1);
+  --color-brown-600: rgba(94, 82, 64, 1);
+  --color-charcoal-700: rgba(31, 33, 33, 1);
+  --color-charcoal-800: rgba(38, 40, 40, 1);
+  --color-slate-900: rgba(19, 52, 59, 1);
+  --color-teal-300: rgba(50, 184, 198, 1);
+  --color-teal-400: rgba(45, 166, 178, 1);
+  --color-teal-500: rgba(33, 128, 141, 1);
+  --color-teal-600: rgba(29, 116, 128, 1);
+  --color-teal-700: rgba(26, 104, 115, 1);
+  --color-teal-800: rgba(41, 150, 161, 1);
+  --color-red-400: rgba(255, 84, 89, 1);
+  --color-red-500: rgba(192, 21, 47, 1);
+  --color-orange-400: rgba(230, 129, 97, 1);
+  --color-orange-500: rgba(168, 75, 47, 1);
+
+  /* RGB versions for opacity control */
+  --color-brown-600-rgb: 94, 82, 64;
+  --color-teal-500-rgb: 33, 128, 141;
+  --color-slate-900-rgb: 19, 52, 59;
+  --color-slate-500-rgb: 98, 108, 113;
+  --color-red-500-rgb: 192, 21, 47;
+  --color-red-400-rgb: 255, 84, 89;
+  --color-orange-500-rgb: 168, 75, 47;
+  --color-orange-400-rgb: 230, 129, 97;
+
+  /* Background color tokens (Light Mode) */
+  --color-bg-1: rgba(59, 130, 246, 0.08); /* Light blue */
+  --color-bg-2: rgba(245, 158, 11, 0.08); /* Light yellow */
+  --color-bg-3: rgba(34, 197, 94, 0.08); /* Light green */
+  --color-bg-4: rgba(239, 68, 68, 0.08); /* Light red */
+  --color-bg-5: rgba(147, 51, 234, 0.08); /* Light purple */
+  --color-bg-6: rgba(249, 115, 22, 0.08); /* Light orange */
+  --color-bg-7: rgba(236, 72, 153, 0.08); /* Light pink */
+  --color-bg-8: rgba(6, 182, 212, 0.08); /* Light cyan */
+
+  /* Semantic Color Tokens (Light Mode) */
+  --color-background: var(--color-cream-50);
+  --color-surface: var(--color-cream-100);
+  --color-text: var(--color-slate-900);
+  --color-text-secondary: var(--color-slate-500);
+  --color-primary: var(--color-teal-500);
+  --color-primary-hover: var(--color-teal-600);
+  --color-primary-active: var(--color-teal-700);
+  --color-secondary: rgba(var(--color-brown-600-rgb), 0.12);
+  --color-secondary-hover: rgba(var(--color-brown-600-rgb), 0.2);
+  --color-secondary-active: rgba(var(--color-brown-600-rgb), 0.25);
+  --color-border: rgba(var(--color-brown-600-rgb), 0.2);
+  --color-btn-primary-text: var(--color-cream-50);
+  --color-card-border: rgba(var(--color-brown-600-rgb), 0.12);
+  --color-card-border-inner: rgba(var(--color-brown-600-rgb), 0.12);
+  --color-error: var(--color-red-500);
+  --color-success: var(--color-teal-500);
+  --color-warning: var(--color-orange-500);
+  --color-info: var(--color-slate-500);
+  --color-focus-ring: rgba(var(--color-teal-500-rgb), 0.4);
+  --color-select-caret: rgba(var(--color-slate-900-rgb), 0.8);
+
+  /* RGB versions for opacity control */
+  --color-success-rgb: 33, 128, 141;
+  --color-error-rgb: 192, 21, 47;
+  --color-warning-rgb: 168, 75, 47;
+  --color-info-rgb: 98, 108, 113;
+
+  /* Typography */
+  --font-family-base: "FKGroteskNeue", "Geist", "Inter", -apple-system,
+    BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-family-mono: "Berkeley Mono", ui-monospace, SFMono-Regular, Menlo,
+    Monaco, Consolas, monospace;
+  --font-size-xs: 11px;
+  --font-size-sm: 12px;
+  --font-size-base: 14px;
+  --font-size-md: 14px;
+  --font-size-lg: 16px;
+  --font-size-xl: 18px;
+  --font-size-2xl: 20px;
+  --font-size-3xl: 24px;
+  --font-size-4xl: 30px;
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 550;
+  --font-weight-bold: 600;
+  --line-height-tight: 1.2;
+  --line-height-normal: 1.5;
+  --letter-spacing-tight: -0.01em;
+
+  /* Spacing */
+  --space-0: 0;
+  --space-1: 1px;
+  --space-2: 2px;
+  --space-4: 4px;
+  --space-6: 6px;
+  --space-8: 8px;
+  --space-10: 10px;
+  --space-12: 12px;
+  --space-16: 16px;
+  --space-20: 20px;
+  --space-24: 24px;
+  --space-32: 32px;
+
+  /* Border Radius */
+  --radius-sm: 6px;
+  --radius-base: 8px;
+  --radius-md: 10px;
+  --radius-lg: 12px;
+  --radius-full: 9999px;
+
+  /* Shadows */
+  --shadow-xs: 0 1px 2px rgba(0, 0, 0, 0.02);
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.04), 0 1px 2px rgba(0, 0, 0, 0.02);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.04),
+    0 2px 4px -1px rgba(0, 0, 0, 0.02);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.04),
+    0 4px 6px -2px rgba(0, 0, 0, 0.02);
+  --shadow-inset-sm: inset 0 1px 0 rgba(255, 255, 255, 0.15),
+    inset 0 -1px 0 rgba(0, 0, 0, 0.03);
+
+  /* Animation */
+  --duration-fast: 150ms;
+  --duration-normal: 250ms;
+  --ease-standard: cubic-bezier(0.16, 1, 0.3, 1);
+
+  /* Layout */
+  --container-sm: 640px;
+  --container-md: 768px;
+  --container-lg: 1024px;
+  --container-xl: 1280px;
+}
+
+/* Dark mode colors */
+@media (prefers-color-scheme: dark) {
+  :root {
+    /* RGB versions for opacity control (Dark Mode) */
+    --color-gray-400-rgb: 119, 124, 124;
+    --color-teal-300-rgb: 50, 184, 198;
+    --color-gray-300-rgb: 167, 169, 169;
+    --color-gray-200-rgb: 245, 245, 245;
+
+    /* Background color tokens (Dark Mode) */
+    --color-bg-1: rgba(29, 78, 216, 0.15); /* Dark blue */
+    --color-bg-2: rgba(180, 83, 9, 0.15); /* Dark yellow */
+    --color-bg-3: rgba(21, 128, 61, 0.15); /* Dark green */
+    --color-bg-4: rgba(185, 28, 28, 0.15); /* Dark red */
+    --color-bg-5: rgba(107, 33, 168, 0.15); /* Dark purple */
+    --color-bg-6: rgba(194, 65, 12, 0.15); /* Dark orange */
+    --color-bg-7: rgba(190, 24, 93, 0.15); /* Dark pink */
+    --color-bg-8: rgba(8, 145, 178, 0.15); /* Dark cyan */
+
+    /* Semantic Color Tokens (Dark Mode) */
+    --color-background: var(--color-charcoal-700);
+    --color-surface: var(--color-charcoal-800);
+    --color-text: var(--color-gray-200);
+    --color-text-secondary: rgba(var(--color-gray-300-rgb), 0.7);
+    --color-primary: var(--color-teal-300);
+    --color-primary-hover: var(--color-teal-400);
+    --color-primary-active: var(--color-teal-800);
+    --color-secondary: rgba(var(--color-gray-400-rgb), 0.15);
+    --color-secondary-hover: rgba(var(--color-gray-400-rgb), 0.25);
+    --color-secondary-active: rgba(var(--color-gray-400-rgb), 0.3);
+    --color-border: rgba(var(--color-gray-400-rgb), 0.3);
+    --color-error: var(--color-red-400);
+    --color-success: var(--color-teal-300);
+    --color-warning: var(--color-orange-400);
+    --color-info: var(--color-gray-300);
+    --color-focus-ring: rgba(var(--color-teal-300-rgb), 0.4);
+    --color-btn-primary-text: var(--color-slate-900);
+    --color-card-border: rgba(var(--color-gray-400-rgb), 0.2);
+    --color-card-border-inner: rgba(var(--color-gray-400-rgb), 0.15);
+    --shadow-inset-sm: inset 0 1px 0 rgba(255, 255, 255, 0.1),
+      inset 0 -1px 0 rgba(0, 0, 0, 0.15);
+    --button-border-secondary: rgba(var(--color-gray-400-rgb), 0.2);
+    --color-border-secondary: rgba(var(--color-gray-400-rgb), 0.2);
+    --color-select-caret: rgba(var(--color-gray-200-rgb), 0.8);
+
+    /* Common style patterns - updated for dark mode */
+    --focus-ring: 0 0 0 3px var(--color-focus-ring);
+    --focus-outline: 2px solid var(--color-primary);
+    --status-bg-opacity: 0.15;
+    --status-border-opacity: 0.25;
+    --select-caret-light: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%23134252' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+    --select-caret-dark: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%23f5f5f5' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+
+    /* RGB versions for dark mode */
+    --color-success-rgb: var(--color-teal-300-rgb);
+    --color-error-rgb: var(--color-red-400-rgb);
+    --color-warning-rgb: var(--color-orange-400-rgb);
+    --color-info-rgb: var(--color-gray-300-rgb);
+  }
+}
+
+/* Data attribute for manual theme switching */
+[data-color-scheme="dark"] {
+  /* RGB versions for opacity control (dark mode) */
+  --color-gray-400-rgb: 119, 124, 124;
+  --color-teal-300-rgb: 50, 184, 198;
+  --color-gray-300-rgb: 167, 169, 169;
+  --color-gray-200-rgb: 245, 245, 245;
+
+  /* Colorful background palette - Dark Mode */
+  --color-bg-1: rgba(29, 78, 216, 0.15); /* Dark blue */
+  --color-bg-2: rgba(180, 83, 9, 0.15); /* Dark yellow */
+  --color-bg-3: rgba(21, 128, 61, 0.15); /* Dark green */
+  --color-bg-4: rgba(185, 28, 28, 0.15); /* Dark red */
+  --color-bg-5: rgba(107, 33, 168, 0.15); /* Dark purple */
+  --color-bg-6: rgba(194, 65, 12, 0.15); /* Dark orange */
+  --color-bg-7: rgba(190, 24, 93, 0.15); /* Dark pink */
+  --color-bg-8: rgba(8, 145, 178, 0.15); /* Dark cyan */
+
+  /* Semantic Color Tokens (Dark Mode) */
+  --color-background: var(--color-charcoal-700);
+  --color-surface: var(--color-charcoal-800);
+  --color-text: var(--color-gray-200);
+  --color-text-secondary: rgba(var(--color-gray-300-rgb), 0.7);
+  --color-primary: var(--color-teal-300);
+  --color-primary-hover: var(--color-teal-400);
+  --color-primary-active: var(--color-teal-800);
+  --color-secondary: rgba(var(--color-gray-400-rgb), 0.15);
+  --color-secondary-hover: rgba(var(--color-gray-400-rgb), 0.25);
+  --color-secondary-active: rgba(var(--color-gray-400-rgb), 0.3);
+  --color-border: rgba(var(--color-gray-400-rgb), 0.3);
+  --color-error: var(--color-red-400);
+  --color-success: var(--color-teal-300);
+  --color-warning: var(--color-orange-400);
+  --color-info: var(--color-gray-300);
+  --color-focus-ring: rgba(var(--color-teal-300-rgb), 0.4);
+  --color-btn-primary-text: var(--color-slate-900);
+  --color-card-border: rgba(var(--color-gray-400-rgb), 0.15);
+  --color-card-border-inner: rgba(var(--color-gray-400-rgb), 0.15);
+  --shadow-inset-sm: inset 0 1px 0 rgba(255, 255, 255, 0.1),
+    inset 0 -1px 0 rgba(0, 0, 0, 0.15);
+  --color-border-secondary: rgba(var(--color-gray-400-rgb), 0.2);
+  --color-select-caret: rgba(var(--color-gray-200-rgb), 0.8);
+
+  /* Common style patterns - updated for dark mode */
+  --focus-ring: 0 0 0 3px var(--color-focus-ring);
+  --focus-outline: 2px solid var(--color-primary);
+  --status-bg-opacity: 0.15;
+  --status-border-opacity: 0.25;
+  --select-caret-light: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%23134252' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+  --select-caret-dark: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%23f5f5f5' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+
+  /* RGB versions for dark mode */
+  --color-success-rgb: var(--color-teal-300-rgb);
+  --color-error-rgb: var(--color-red-400-rgb);
+  --color-warning-rgb: var(--color-orange-400-rgb);
+  --color-info-rgb: var(--color-gray-300-rgb);
+}
+
+[data-color-scheme="light"] {
+  /* RGB versions for opacity control (light mode) */
+  --color-brown-600-rgb: 94, 82, 64;
+  --color-teal-500-rgb: 33, 128, 141;
+  --color-slate-900-rgb: 19, 52, 59;
+
+  /* Semantic Color Tokens (Light Mode) */
+  --color-background: var(--color-cream-50);
+  --color-surface: var(--color-cream-100);
+  --color-text: var(--color-slate-900);
+  --color-text-secondary: var(--color-slate-500);
+  --color-primary: var(--color-teal-500);
+  --color-primary-hover: var(--color-teal-600);
+  --color-primary-active: var(--color-teal-700);
+  --color-secondary: rgba(var(--color-brown-600-rgb), 0.12);
+  --color-secondary-hover: rgba(var(--color-brown-600-rgb), 0.2);
+  --color-secondary-active: rgba(var(--color-brown-600-rgb), 0.25);
+  --color-border: rgba(var(--color-brown-600-rgb), 0.2);
+  --color-btn-primary-text: var(--color-cream-50);
+  --color-card-border: rgba(var(--color-brown-600-rgb), 0.12);
+  --color-card-border-inner: rgba(var(--color-brown-600-rgb), 0.12);
+  --color-error: var(--color-red-500);
+  --color-success: var(--color-teal-500);
+  --color-warning: var(--color-orange-500);
+  --color-info: var(--color-slate-500);
+  --color-focus-ring: rgba(var(--color-teal-500-rgb), 0.4);
+
+  /* RGB versions for light mode */
+  --color-success-rgb: var(--color-teal-500-rgb);
+  --color-error-rgb: var(--color-red-500-rgb);
+  --color-warning-rgb: var(--color-orange-500-rgb);
+  --color-info-rgb: var(--color-slate-500-rgb);
+}
+
+/* Base styles */
+html {
+  font-size: var(--font-size-base);
+  font-family: var(--font-family-base);
+  line-height: var(--line-height-normal);
+  color: var(--color-text);
+  background-color: var(--color-background);
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+/* Typography */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  font-weight: var(--font-weight-semibold);
+  line-height: var(--line-height-tight);
+  color: var(--color-text);
+  letter-spacing: var(--letter-spacing-tight);
+}
+
+h1 {
+  font-size: var(--font-size-4xl);
+}
+h2 {
+  font-size: var(--font-size-3xl);
+}
+h3 {
+  font-size: var(--font-size-2xl);
+}
+h4 {
+  font-size: var(--font-size-xl);
+}
+h5 {
+  font-size: var(--font-size-lg);
+}
+h6 {
+  font-size: var(--font-size-md);
+}
+
+p {
+  margin: 0 0 var(--space-16) 0;
+}
+
+a {
+  color: var(--color-primary);
+  text-decoration: none;
+  transition: color var(--duration-fast) var(--ease-standard);
+}
+
+a:hover {
+  color: var(--color-primary-hover);
+}
+
+code,
+pre {
+  font-family: var(--font-family-mono);
+  font-size: calc(var(--font-size-base) * 0.95);
+  background-color: var(--color-secondary);
+  border-radius: var(--radius-sm);
+}
+
+code {
+  padding: var(--space-1) var(--space-4);
+}
+
+pre {
+  padding: var(--space-16);
+  margin: var(--space-16) 0;
+  overflow: auto;
+  border: 1px solid var(--color-border);
+}
+
+pre code {
+  background: none;
+  padding: 0;
+}
+
+/* Buttons */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-8) var(--space-16);
+  border-radius: var(--radius-base);
+  font-size: var(--font-size-base);
+  font-weight: 500;
+  line-height: 1.5;
+  cursor: pointer;
+  transition: all var(--duration-normal) var(--ease-standard);
+  border: none;
+  text-decoration: none;
+  position: relative;
+}
+
+.btn:focus-visible {
+  outline: none;
+  box-shadow: var(--focus-ring);
+}
+
+.btn--primary {
+  background: var(--color-primary);
+  color: var(--color-btn-primary-text);
+}
+
+.btn--primary:hover {
+  background: var(--color-primary-hover);
+}
+
+.btn--primary:active {
+  background: var(--color-primary-active);
+}
+
+.btn--secondary {
+  background: var(--color-secondary);
+  color: var(--color-text);
+}
+
+.btn--secondary:hover {
+  background: var(--color-secondary-hover);
+}
+
+.btn--secondary:active {
+  background: var(--color-secondary-active);
+}
+
+.btn--outline {
+  background: transparent;
+  border: 1px solid var(--color-border);
+  color: var(--color-text);
+}
+
+.btn--outline:hover {
+  background: var(--color-secondary);
+}
+
+.btn--sm {
+  padding: var(--space-4) var(--space-12);
+  font-size: var(--font-size-sm);
+  border-radius: var(--radius-sm);
+}
+
+.btn--lg {
+  padding: var(--space-10) var(--space-20);
+  font-size: var(--font-size-lg);
+  border-radius: var(--radius-md);
+}
+
+.btn--full-width {
+  width: 100%;
+}
+
+.btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Form elements */
+.form-control {
+  display: block;
+  width: 100%;
+  padding: var(--space-8) var(--space-12);
+  font-size: var(--font-size-md);
+  line-height: 1.5;
+  color: var(--color-text);
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-base);
+  transition: border-color var(--duration-fast) var(--ease-standard),
+    box-shadow var(--duration-fast) var(--ease-standard);
+}
+
+textarea.form-control {
+  font-family: var(--font-family-base);
+  font-size: var(--font-size-base);
+}
+
+select.form-control {
+  padding: var(--space-8) var(--space-12);
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-image: var(--select-caret-light);
+  background-repeat: no-repeat;
+  background-position: right var(--space-12) center;
+  background-size: 16px;
+  padding-right: var(--space-32);
+}
+
+/* Add a dark mode specific caret */
+@media (prefers-color-scheme: dark) {
+  select.form-control {
+    background-image: var(--select-caret-dark);
+  }
+}
+
+/* Also handle data-color-scheme */
+[data-color-scheme="dark"] select.form-control {
+  background-image: var(--select-caret-dark);
+}
+
+[data-color-scheme="light"] select.form-control {
+  background-image: var(--select-caret-light);
+}
+
+.form-control:focus {
+  border-color: var(--color-primary);
+  outline: var(--focus-outline);
+}
+
+.form-label {
+  display: block;
+  margin-bottom: var(--space-8);
+  font-weight: var(--font-weight-medium);
+  font-size: var(--font-size-sm);
+}
+
+.form-group {
+  margin-bottom: var(--space-16);
+}
+
+/* Card component */
+.card {
+  background-color: var(--color-surface);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--color-card-border);
+  box-shadow: var(--shadow-sm);
+  overflow: hidden;
+  transition: box-shadow var(--duration-normal) var(--ease-standard);
+}
+
+.card:hover {
+  box-shadow: var(--shadow-md);
+}
+
+.card__body {
+  padding: var(--space-16);
+}
+
+.card__header,
+.card__footer {
+  padding: var(--space-16);
+  border-bottom: 1px solid var(--color-card-border-inner);
+}
+
+/* Status indicators - simplified with CSS variables */
+.status {
+  display: inline-flex;
+  align-items: center;
+  padding: var(--space-6) var(--space-12);
+  border-radius: var(--radius-full);
+  font-weight: var(--font-weight-medium);
+  font-size: var(--font-size-sm);
+}
+
+.status--success {
+  background-color: rgba(
+    var(--color-success-rgb, 33, 128, 141),
+    var(--status-bg-opacity)
+  );
+  color: var(--color-success);
+  border: 1px solid
+    rgba(var(--color-success-rgb, 33, 128, 141), var(--status-border-opacity));
+}
+
+.status--error {
+  background-color: rgba(
+    var(--color-error-rgb, 192, 21, 47),
+    var(--status-bg-opacity)
+  );
+  color: var(--color-error);
+  border: 1px solid
+    rgba(var(--color-error-rgb, 192, 21, 47), var(--status-border-opacity));
+}
+
+.status--warning {
+  background-color: rgba(
+    var(--color-warning-rgb, 168, 75, 47),
+    var(--status-bg-opacity)
+  );
+  color: var(--color-warning);
+  border: 1px solid
+    rgba(var(--color-warning-rgb, 168, 75, 47), var(--status-border-opacity));
+}
+
+.status--info {
+  background-color: rgba(
+    var(--color-info-rgb, 98, 108, 113),
+    var(--status-bg-opacity)
+  );
+  color: var(--color-info);
+  border: 1px solid
+    rgba(var(--color-info-rgb, 98, 108, 113), var(--status-border-opacity));
+}
+
+/* Container layout */
+.container {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: var(--space-16);
+  padding-left: var(--space-16);
+}
+
+@media (min-width: 640px) {
+  .container {
+    max-width: var(--container-sm);
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    max-width: var(--container-md);
+  }
+}
+@media (min-width: 1024px) {
+  .container {
+    max-width: var(--container-lg);
+  }
+}
+@media (min-width: 1280px) {
+  .container {
+    max-width: var(--container-xl);
+  }
+}
+
+/* Utility classes */
+.flex {
+  display: flex;
+}
+.flex-col {
+  flex-direction: column;
+}
+.items-center {
+  align-items: center;
+}
+.justify-center {
+  justify-content: center;
+}
+.justify-between {
+  justify-content: space-between;
+}
+.gap-4 {
+  gap: var(--space-4);
+}
+.gap-8 {
+  gap: var(--space-8);
+}
+.gap-16 {
+  gap: var(--space-16);
+}
+
+.m-0 {
+  margin: 0;
+}
+.mt-8 {
+  margin-top: var(--space-8);
+}
+.mb-8 {
+  margin-bottom: var(--space-8);
+}
+.mx-8 {
+  margin-left: var(--space-8);
+  margin-right: var(--space-8);
+}
+.my-8 {
+  margin-top: var(--space-8);
+  margin-bottom: var(--space-8);
+}
+
+.p-0 {
+  padding: 0;
+}
+.py-8 {
+  padding-top: var(--space-8);
+  padding-bottom: var(--space-8);
+}
+.px-8 {
+  padding-left: var(--space-8);
+  padding-right: var(--space-8);
+}
+.py-16 {
+  padding-top: var(--space-16);
+  padding-bottom: var(--space-16);
+}
+.px-16 {
+  padding-left: var(--space-16);
+  padding-right: var(--space-16);
+}
+
+.block {
+  display: block;
+}
+.hidden {
+  display: none;
+}
+
+/* Accessibility */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+:focus-visible {
+  outline: var(--focus-outline);
+  outline-offset: 2px;
+}
+
+/* Dark mode specifics */
+[data-color-scheme="dark"] .btn--outline {
+  border: 1px solid var(--color-border-secondary);
+}
+
+@font-face {
+  font-family: 'FKGroteskNeue';
+  src: url('https://r2cdn.perplexity.ai/fonts/FKGroteskNeue.woff2')
+    format('woff2');
+}
+
+/* END PERPLEXITY DESIGN SYSTEM */
+
+        :root {
+            /* Primitive Color Tokens */
+            --color-white: rgba(255, 255, 255, 1);
+            --color-black: rgba(0, 0, 0, 1);
+            --color-cream-50: rgba(252, 252, 249, 1);
+            --color-cream-100: rgba(255, 255, 253, 1);
+            --color-gray-200: rgba(245, 245, 245, 1);
+            --color-gray-300: rgba(167, 169, 169, 1);
+            --color-gray-400: rgba(119, 124, 124, 1);
+            --color-slate-500: rgba(98, 108, 113, 1);
+            --color-brown-600: rgba(94, 82, 64, 1);
+            --color-charcoal-700: rgba(31, 33, 33, 1);
+            --color-charcoal-800: rgba(38, 40, 40, 1);
+            --color-slate-900: rgba(19, 52, 59, 1);
+            --color-teal-300: rgba(50, 184, 198, 1);
+            --color-teal-400: rgba(45, 166, 178, 1);
+            --color-teal-500: rgba(33, 128, 141, 1);
+            --color-teal-600: rgba(29, 116, 128, 1);
+            --color-teal-700: rgba(26, 104, 115, 1);
+            --color-teal-800: rgba(41, 150, 161, 1);
+            --color-red-400: rgba(255, 84, 89, 1);
+            --color-red-500: rgba(192, 21, 47, 1);
+            --color-orange-400: rgba(230, 129, 97, 1);
+            --color-orange-500: rgba(168, 75, 47, 1);
+            --color-blue-500: rgba(59, 130, 246, 1);
+            --color-blue-600: rgba(37, 99, 235, 1);
+            
+            /* RGB versions for opacity control */
+            --color-brown-600-rgb: 94, 82, 64;
+            --color-teal-500-rgb: 33, 128, 141;
+            --color-slate-900-rgb: 19, 52, 59;
+            --color-slate-500-rgb: 98, 108, 113;
+            --color-red-500-rgb: 192, 21, 47;
+            --color-red-400-rgb: 255, 84, 89;
+            --color-orange-500-rgb: 168, 75, 47;
+            --color-orange-400-rgb: 230, 129, 97;
+            
+            /* Background color tokens (Light Mode) */
+            --color-bg-1: rgba(59, 130, 246, 0.08);
+            --color-bg-2: rgba(245, 158, 11, 0.08);
+            --color-bg-3: rgba(34, 197, 94, 0.08);
+            --color-bg-4: rgba(239, 68, 68, 0.08);
+            --color-bg-5: rgba(147, 51, 234, 0.08);
+            --color-bg-6: rgba(249, 115, 22, 0.08);
+            --color-bg-7: rgba(236, 72, 153, 0.08);
+            --color-bg-8: rgba(6, 182, 212, 0.08);
+            
+            /* Semantic Color Tokens (Light Mode) */
+            --color-background: var(--color-cream-50);
+            --color-surface: var(--color-cream-100);
+            --color-text: var(--color-slate-900);
+            --color-text-secondary: var(--color-slate-500);
+            --color-primary: var(--color-teal-500);
+            --color-primary-hover: var(--color-teal-600);
+            --color-primary-active: var(--color-teal-700);
+            --color-secondary: rgba(var(--color-brown-600-rgb), 0.12);
+            --color-secondary-hover: rgba(var(--color-brown-600-rgb), 0.2);
+            --color-secondary-active: rgba(var(--color-brown-600-rgb), 0.25);
+            --color-border: rgba(var(--color-brown-600-rgb), 0.2);
+            --color-btn-primary-text: var(--color-cream-50);
+            --color-card-border: rgba(var(--color-brown-600-rgb), 0.12);
+            --color-card-border-inner: rgba(var(--color-brown-600-rgb), 0.12);
+            --color-error: var(--color-red-500);
+            --color-success: var(--color-teal-500);
+            --color-warning: var(--color-orange-500);
+            --color-info: var(--color-slate-500);
+            --color-focus-ring: rgba(var(--color-teal-500-rgb), 0.4);
+            --color-select-caret: rgba(var(--color-slate-900-rgb), 0.8);
+            
+            /* Typography */
+            --font-family-base: "Amiri", "Noto Sans Arabic", "Traditional Arabic", Arial, sans-serif;
+            --font-family-mono: "Berkeley Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+            --font-size-xs: 11px;
+            --font-size-sm: 12px;
+            --font-size-base: 16px;
+            --font-size-md: 16px;
+            --font-size-lg: 18px;
+            --font-size-xl: 20px;
+            --font-size-2xl: 24px;
+            --font-size-3xl: 28px;
+            --font-size-4xl: 32px;
+            --font-weight-normal: 400;
+            --font-weight-medium: 500;
+            --font-weight-semibold: 550;
+            --font-weight-bold: 600;
+            --line-height-tight: 1.3;
+            --line-height-normal: 1.6;
+            --letter-spacing-tight: -0.01em;
+            
+            /* Spacing */
+            --space-0: 0;
+            --space-1: 1px;
+            --space-2: 2px;
+            --space-4: 4px;
+            --space-6: 6px;
+            --space-8: 8px;
+            --space-10: 10px;
+            --space-12: 12px;
+            --space-16: 16px;
+            --space-20: 20px;
+            --space-24: 24px;
+            --space-32: 32px;
+            
+            /* Border Radius */
+            --radius-sm: 6px;
+            --radius-base: 8px;
+            --radius-md: 10px;
+            --radius-lg: 12px;
+            --radius-full: 9999px;
+            
+            /* Shadows */
+            --shadow-xs: 0 1px 2px rgba(0, 0, 0, 0.02);
+            --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.04), 0 1px 2px rgba(0, 0, 0, 0.02);
+            --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.04), 0 2px 4px -1px rgba(0, 0, 0, 0.02);
+            --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.04), 0 4px 6px -2px rgba(0, 0, 0, 0.02);
+            --shadow-inset-sm: inset 0 1px 0 rgba(255, 255, 255, 0.15), inset 0 -1px 0 rgba(0, 0, 0, 0.03);
+            
+            /* Animation */
+            --duration-fast: 150ms;
+            --duration-normal: 250ms;
+            --ease-standard: cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        
+        /* Override base font to Arabic-friendly stack while using design system variables */
+        :root { --font-family-base: "Amiri", "Noto Naskh Arabic", "Noto Sans Arabic", Arial, sans-serif; }
+
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --color-gray-400-rgb: 119, 124, 124;
+                --color-teal-300-rgb: 50, 184, 198;
+                --color-gray-300-rgb: 167, 169, 169;
+                --color-gray-200-rgb: 245, 245, 245;
+                
+                --color-background: var(--color-charcoal-700);
+                --color-surface: var(--color-charcoal-800);
+                --color-text: var(--color-gray-200);
+                --color-text-secondary: rgba(var(--color-gray-300-rgb), 0.7);
+                --color-primary: var(--color-teal-300);
+                --color-primary-hover: var(--color-teal-400);
+                --color-primary-active: var(--color-teal-800);
+                --color-secondary: rgba(var(--color-gray-400-rgb), 0.15);
+                --color-secondary-hover: rgba(var(--color-gray-400-rgb), 0.25);
+                --color-secondary-active: rgba(var(--color-gray-400-rgb), 0.3);
+                --color-border: rgba(var(--color-gray-400-rgb), 0.3);
+                --color-error: var(--color-red-400);
+                --color-success: var(--color-teal-300);
+                --color-warning: var(--color-orange-400);
+                --color-info: var(--color-gray-300);
+                --color-focus-ring: rgba(var(--color-teal-300-rgb), 0.4);
+                --color-btn-primary-text: var(--color-slate-900);
+                --color-card-border: rgba(var(--color-gray-400-rgb), 0.2);
+                --color-card-border-inner: rgba(var(--color-gray-400-rgb), 0.15);
+            }
+        }
+        
+        /* Base styles */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        
+        html {
+            font-size: var(--font-size-base);
+            font-family: var(--font-family-base);
+            line-height: var(--line-height-normal);
+            color: var(--color-text);
+            background-color: var(--color-background);
+            -webkit-font-smoothing: antialiased;
+        }
+        
+        body {
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+        }
+        
+        /* Typography */
+        h1, h2, h3, h4, h5, h6 {
+            margin: 0;
+            font-weight: var(--font-weight-semibold);
+            line-height: var(--line-height-tight);
+            color: var(--color-text);
+            letter-spacing: var(--letter-spacing-tight);
+        }
+        
+        h1 { font-size: var(--font-size-4xl); }
+        h2 { font-size: var(--font-size-3xl); }
+        h3 { font-size: var(--font-size-2xl); }
+        h4 { font-size: var(--font-size-xl); }
+        h5 { font-size: var(--font-size-lg); }
+        h6 { font-size: var(--font-size-md); }
+        
+        p {
+            margin: 0 0 var(--space-16) 0;
+        }
+        
+        /* Buttons */
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: var(--space-12) var(--space-20);
+            border-radius: var(--radius-base);
+            font-size: var(--font-size-base);
+            font-weight: 500;
+            line-height: 1.5;
+            cursor: pointer;
+            transition: all var(--duration-normal) var(--ease-standard);
+            border: none;
+            text-decoration: none;
+            position: relative;
+            font-family: var(--font-family-base);
+        }
+        
+        .btn:focus-visible {
+            outline: none;
+            box-shadow: 0 0 0 3px var(--color-focus-ring);
+        }
+        
+        .btn--primary {
+            background: var(--color-primary);
+            color: var(--color-btn-primary-text);
+        }
+        
+        .btn--primary:hover {
+            background: var(--color-primary-hover);
+        }
+        
+        .btn--secondary {
+            background: var(--color-secondary);
+            color: var(--color-text);
+            border: 1px solid var(--color-border);
+        }
+        
+        .btn--secondary:hover {
+            background: var(--color-secondary-hover);
+        }
+        
+        .btn--success {
+            background: var(--color-success);
+            color: var(--color-btn-primary-text);
+        }
+        
+        .btn--error {
+            background: var(--color-error);
+            color: var(--color-white);
+        }
+        
+        .btn--lg {
+            padding: var(--space-16) var(--space-24);
+            font-size: var(--font-size-lg);
+        }
+        
+        .btn--full {
+            width: 100%;
+        }
+        
+        .btn:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+        
+        /* Form elements */
+        .form-control {
+            display: block;
+            width: 100%;
+            padding: var(--space-12) var(--space-16);
+            font-size: var(--font-size-base);
+            line-height: 1.5;
+            color: var(--color-text);
+            background-color: var(--color-surface);
+            border: 1px solid var(--color-border);
+            border-radius: var(--radius-base);
+            transition: border-color var(--duration-fast) var(--ease-standard);
+            font-family: var(--font-family-base);
+        }
+        
+        .form-control:focus {
+            border-color: var(--color-primary);
+            outline: 2px solid var(--color-primary);
+            outline-offset: 1px;
+        }
+        
+        .form-label {
+            display: block;
+            margin-bottom: var(--space-8);
+            font-weight: var(--font-weight-medium);
+            font-size: var(--font-size-base);
+        }
+        
+        .form-group {
+            margin-bottom: var(--space-20);
+        }
+        
+        /* Card component */
+        .card {
+            background-color: var(--color-surface);
+            border-radius: var(--radius-lg);
+            border: 1px solid var(--color-card-border);
+            box-shadow: var(--shadow-sm);
+            overflow: hidden;
+            margin-bottom: var(--space-20);
+        }
+        
+        .card__body {
+            padding: var(--space-20);
+        }
+        
+        .card__header {
+            padding: var(--space-20);
+            border-bottom: 1px solid var(--color-card-border-inner);
+            background-color: var(--color-bg-1);
+        }
+        
+        /* Layout */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: var(--space-20);
+        }
+        
+        .flex {
+            display: flex;
+        }
+        
+        .flex-col {
+            flex-direction: column;
+        }
+        
+        .items-center {
+            align-items: center;
+        }
+        
+        .justify-center {
+            justify-content: center;
+        }
+        
+        .justify-between {
+            justify-content: space-between;
+        }
+        
+        .gap-8 {
+            gap: var(--space-8);
+        }
+        
+        .gap-16 {
+            gap: var(--space-16);
+        }
+        
+        .gap-20 {
+            gap: var(--space-20);
+        }
+        
+        .text-center {
+            text-align: center;
+        }
+        
+        .text-blue {
+            color: var(--color-primary);
+            font-weight: var(--font-weight-semibold);
+        }
+        
+        .text-lg {
+            font-size: var(--font-size-lg);
+            line-height: var(--line-height-normal);
+        }
+        
+        .text-xl {
+            font-size: var(--font-size-xl);
+            line-height: var(--line-height-normal);
+        }
+        
+        .text-2xl {
+            font-size: var(--font-size-2xl);
+            line-height: var(--line-height-tight);
+        }
+        
+        .verse-text {
+            font-size: var(--font-size-xl);
+            line-height: var(--line-height-normal);
+            font-weight: var(--font-weight-medium);
+            text-align: center;
+            padding: var(--space-20);
+            background: var(--color-bg-3);
+            border-radius: var(--radius-lg);
+            margin: var(--space-16) 0;
+        }
+        
+        .options-grid {
+            display: grid;
+            gap: var(--space-12);
+            margin: var(--space-16) 0;
+        }
+        
+        .option-btn {
+            padding: var(--space-16);
+            text-align: center;
+            background: var(--color-surface);
+            border: 2px solid var(--color-border);
+            border-radius: var(--radius-base);
+            cursor: pointer;
+            transition: all var(--duration-fast) var(--ease-standard);
+            font-family: var(--font-family-base);
+            font-size: var(--font-size-base);
+            line-height: var(--line-height-normal);
+        }
+        
+        .option-btn:hover {
+            background: var(--color-bg-1);
+            border-color: var(--color-primary);
+        }
+        
+        .option-btn.correct {
+            background: var(--color-bg-3);
+            border-color: var(--color-success);
+            color: var(--color-success);
+        }
+        
+        .option-btn.incorrect {
+            background: var(--color-bg-4);
+            border-color: var(--color-error);
+            color: var(--color-error);
+        }
+        
+        .option-btn.selected {
+            border-color: var(--color-primary);
+            background: var(--color-bg-1);
+        }
+        
+        .quiz-header {
+            background: var(--color-bg-1);
+            padding: var(--space-16);
+            border-radius: var(--radius-lg);
+            margin-bottom: var(--space-20);
+        }
+        
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+            gap: var(--space-16);
+            margin: var(--space-16) 0;
+        }
+        
+        .stat-card {
+            text-align: center;
+            padding: var(--space-12);
+            background: var(--color-surface);
+            border-radius: var(--radius-base);
+            border: 1px solid var(--color-border);
+        }
+        
+        .stat-number {
+            font-size: var(--font-size-2xl);
+            font-weight: var(--font-weight-bold);
+            color: var(--color-primary);
+        }
+        
+        .stat-label {
+            font-size: var(--font-size-sm);
+            color: var(--color-text-secondary);
+            margin-top: var(--space-4);
+        }
+        
+        .error-message {
+            background: var(--color-bg-4);
+            color: var(--color-error);
+            padding: var(--space-12);
+            border-radius: var(--radius-base);
+            border: 1px solid var(--color-error);
+            margin-top: var(--space-8);
+            font-size: var(--font-size-sm);
+        }
+        
+        .hidden {
+            display: none;
+        }
+        
+        .results-grid {
+            display: grid;
+            gap: var(--space-12);
+        }
+        
+        .result-item {
+            padding: var(--space-16);
+            border-radius: var(--radius-base);
+            border: 1px solid var(--color-border);
+        }
+        
+        .result-item.correct {
+            background: var(--color-bg-3);
+            border-color: var(--color-success);
+        }
+        
+        .result-item.incorrect {
+            background: var(--color-bg-4);
+            border-color: var(--color-error);
+        }
+        
+        .checkbox-container {
+            display: flex;
+            align-items: center;
+            gap: var(--space-8);
+            margin: var(--space-12) 0;
+        }
+        
+        .checkbox-container input[type="checkbox"] {
+            width: 18px;
+            height: 18px;
+            accent-color: var(--color-primary);
+        }
+        
+        .mode-selector {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: var(--space-16);
+            margin: var(--space-20) 0;
+        }
+        
+        .mode-card {
+            padding: var(--space-20);
+            background: var(--color-surface);
+            border: 2px solid var(--color-border);
+            border-radius: var(--radius-lg);
+            cursor: pointer;
+            transition: all var(--duration-fast) var(--ease-standard);
+            text-align: center;
+        }
+        
+        .mode-card:hover {
+            border-color: var(--color-primary);
+            background: var(--color-bg-1);
+        }
+        
+        .mode-card.selected {
+            border-color: var(--color-primary);
+            background: var(--color-bg-1);
+        }
+        
+        .mode-title {
+            font-size: var(--font-size-lg);
+            font-weight: var(--font-weight-semibold);
+            margin-bottom: var(--space-8);
+        }
+        
+        .mode-description {
+            font-size: var(--font-size-sm);
+            color: var(--color-text-secondary);
+            line-height: var(--line-height-normal);
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: var(--space-16);
+            }
+            
+            .stats-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .mode-selector {
+                grid-template-columns: 1fr;
+            }
+            
+            .verse-text {
+                font-size: var(--font-size-lg);
+                padding: var(--space-16);
+            }
+            
+            h1 {
+                font-size: var(--font-size-3xl);
+            }
+            
+            h2 {
+                font-size: var(--font-size-2xl);
+            }
+        }
+        
+        /* Prevent sleep on mobile */
+        @media (max-width: 768px) {
+            body {
+                user-select: none;
+                -webkit-touch-callout: none;
+                -webkit-user-select: none;
+            }
+        }
+    </style>
+<style type="text/css">.vab_dialog {
+  font-family: 'Barlow', sans-serif;
+  position: fixed;
+  right: 0;
+  left: 0;
+  top: 15%;
+  margin: auto;
+  z-index: 2147483647;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  max-width: 580px;
+  background-color: #ffffff;
+  box-shadow: 0 0 22px 7px rgba(0, 0, 0, 0.78);
+  padding: 30px 0; }
+  .vab_dialog .vab_no_entry {
+    width: 40px;
+    height: 40px; }
+  .vab_dialog .are_you_sure {
+    font-size: 30px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #718191;
+    margin: 0 85px; }
+  .vab_dialog .detected {
+    margin: 30px 85px 0 85px;
+    font-size: 30px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #718191; }
+  .vab_dialog .do_you_want {
+    font-size: 21px;
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #718191;
+    margin: 40px 85px 0 85px; }
+  .vab_dialog .opt_out_msg {
+    margin: 20px 50px 0 50px;
+    font-size: 21px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #718191; }
+  .vab_dialog .vab_buttons {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center; }
+    .vab_dialog .vab_buttons .vab_button {
+      cursor: pointer;
+      font-size: 16px;
+      font-weight: 500;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      text-align: center;
+      padding: 16px 24px;
+      border-radius: 5px;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .vab_dialog .vab_buttons .vab_button.cancel {
+        border: solid 1px #718191;
+        color: #718191;
+        margin-right: 20px; }
+      .vab_dialog .vab_buttons .vab_button.exit {
+        color: #f55a2e;
+        border: solid 1px #f55a2e;
+        margin-right: 20px; }
+      .vab_dialog .vab_buttons .vab_button.continue {
+        background-color: #8a95ff;
+        color: #ffffff; }
+</style><style id="hb-stylesheet"></style><style type="text/css">/* Copyright 2014-present Evernote Corporation. All rights reserved. */
+@keyframes caretBlink {
+    from { opacity: 1.0; }
+    to { opacity: 0.0; }
+}
+
+@keyframes rotateSpinner {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
+
+#text-tool-caret {
+    animation-name: caretBlink;  
+    animation-iteration-count: infinite;  
+    animation-timing-function: cubic-bezier(1.0,0,0,1.0);
+    animation-duration: 1s; 
+}
+
+#en-markup-loading-spinner {
+    position: absolute;
+    top: calc(50% - 16px);
+    left: calc(50% - 16px);
+    width: 32px;
+    height: 32px;
+}
+
+#en-markup-loading-spinner img {
+    position: relative;
+    top: 0px;
+    left: 0px;
+    animation-name: rotateSpinner;
+    animation-duration: 0.6s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+</style><style type="text/css">/* Copyright 2014-present Evernote Corporation. All rights reserved. */
+.skitchToastBoxContainer {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: 30px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    pointer-events: none;
+}
+
+.skitchToastBox {
+    width: 200px;
+    height: 16px;
+    padding: 12px;
+    background-color: rgba(47, 55, 61, 0.95);
+    border-radius: 4px;
+    color: white;
+    cursor: default;
+    font-size: 10pt;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.32);
+    font-family: 'Soleil', Helvetica, Arial, sans-serif;
+    border: 2px rgba(255, 255, 255, 0.38) solid;
+}
+
+.lang-zh-cn .skitchToastBox {
+    font-family: '微软雅黑', 'Microsoft YaHei', SimSun,
+        '&#x30E1;&#x30A4;&#x30EA;&#x30AA;', Meiryo, 'MS PGothic', 'Soleil',
+        Helvetica, Arial, sans-serif;
+}
+
+.lang-ja-jp .skitchToastBox {
+    font-family: '&#x30E1;&#x30A4;&#x30EA;&#x30AA;', Meiryo, 'MS PGothic',
+        '微软雅黑', 'Microsoft YaHei', SimSun, 'Soleil', Helvetica, Arial,
+        sans-serif;
+}
+
+.skitchToast {
+    padding-left: 20px;
+    padding-right: 20px;
+    display: inline-block;
+    height: 10px;
+    color: #f1f5f8;
+    text-align: center;
+}
+
+.skitchVisible {
+    /* Don't remove this class it's a hack used by the Evernote Clipper */
+}
+</style><style type="text/css">/* Copyright 2014-present Evernote Corporation. All rights reserved. */
+
+@font-face {
+	font-family: 'Soleil';
+	
+	font-weight: normal;
+	font-style: normal;
+}
+</style><style type="text/css">/* Copyright 2019-present Evernote Corporation. All rights reserved. */
+
+#en-markup-disabled {
+    position: fixed;
+    z-index: 9999;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    cursor: default;
+    -webkit-user-select: none;
+}
+
+#en-markup-alert-container {
+    position: absolute;
+    z-index: 9999;
+    width: 450px;
+    left: calc(50% - 225px);
+    top: calc(50% - 85px);
+    background-color: white;
+    box-shadow: 0 2px 7px 1px rgba(0,0,0,0.35);
+    -webkit-user-select: none;
+}
+
+#en-markup-alert-container .cell-1 {
+    position: relative;
+    height: 110px;
+    width: 105px;
+    float: left;
+    text-align: center;
+    background-position: 65% 50%;
+    background-repeat: no-repeat;
+}
+
+#en-markup-alert-container .cell-2 {
+    position: relative;
+    float: left;
+    width: 345px;
+    margin-top: 29px;
+    margin-bottom: 20px;
+}
+
+#en-markup-alert-container .cell-2 .cell-2-title {
+    margin-bottom: 5px;
+    padding-right: 30px;
+    font-size: 12pt;
+    font-family: Tahoma, Arial;
+}
+
+#en-markup-alert-container .cell-2 .cell-2-message {
+    padding-right: 30px;
+    font-size: 9.5pt;
+    font-family: Tahoma, Arial;
+}
+
+#en-markup-alert-container .cell-3 {
+    position: relative;
+    width: 450px;
+    height: 60px;
+    float: left;
+    background-color: rgb(240,240,240);
+}
+
+#en-markup-alert-container .cell-3 button {
+    position: absolute;
+    top: 12px;
+    right: 15px;
+    width: 110px;
+    height: 36px;
+}
+
+#en-markup-alert-container .cell-3 button.alt-button {
+    position: absolute;
+    top: 12px;
+    right: 140px;
+    width: 110px;
+    height: 36px;
+}
+</style></head>
+<body>
+    <div class="container">
+        <!-- صفحة الرئيسية والإعدادات -->
+        <div id="home-page">
+            <div class="text-center">
+                <h1>اختبار الآيات القرآنية</h1>
+                <p class="text-lg" style="margin-top: var(--space-16); color: var(--color-text-secondary);">على أساس مصحف حفص - 604 صفحات</p>
+            </div>
+            
+            <div class="card">
+                <div class="card__header">
+                    <h2>إعدادات الاختبار</h2>
+                </div>
+                <div class="card__body">
+                    <!-- فلاتر السور -->
+                    <div class="form-group">
+                        <label class="form-label">السورة من:</label>
+                        <select id="surah-start" class="form-control">
+                            <!-- سيتم ملؤها بالجافاسكريبت -->
+                        <option value="1">1. الفاتحة</option><option value="2">2. البقرة</option><option value="3">3. آل عمران</option><option value="4">4. النساء</option><option value="5">5. المائدة</option><option value="6">6. الأنعام</option><option value="7">7. الأعراف</option><option value="8">8. الأنفال</option><option value="9">9. التوبة</option><option value="10">10. يونس</option><option value="11">11. هود</option><option value="12">12. يوسف</option><option value="13">13. الرعد</option><option value="14">14. إبراهيم</option><option value="15">15. الحجر</option><option value="16">16. النحل</option><option value="17">17. الإسراء</option><option value="18">18. الكهف</option><option value="19">19. مريم</option><option value="20">20. طه</option><option value="21">21. الأنبياء</option><option value="22">22. الحج</option><option value="23">23. المؤمنون</option><option value="24">24. النور</option><option value="25">25. الفرقان</option><option value="26">26. الشعراء</option><option value="27">27. النمل</option><option value="28">28. القصص</option><option value="29">29. العنكبوت</option><option value="30">30. الروم</option><option value="31">31. لقمان</option><option value="32">32. السجدة</option><option value="33">33. الأحزاب</option><option value="34">34. سبأ</option><option value="35">35. فاطر</option><option value="36">36. يس</option><option value="37">37. الصافات</option><option value="38">38. ص</option><option value="39">39. الزمر</option><option value="40">40. غافر</option><option value="41">41. فصلت</option><option value="42">42. الشورى</option><option value="43">43. الزخرف</option><option value="44">44. الدخان</option><option value="45">45. الجاثية</option><option value="46">46. الأحقاف</option><option value="47">47. محمد</option><option value="48">48. الفتح</option><option value="49">49. الحجرات</option><option value="50">50. ق</option><option value="51">51. الذاريات</option><option value="52">52. الطور</option><option value="53">53. النجم</option><option value="54">54. القمر</option><option value="55">55. الرحمن</option><option value="56">56. الواقعة</option><option value="57">57. الحديد</option><option value="58">58. المجادلة</option><option value="59">59. الحشر</option><option value="60">60. الممتحنة</option><option value="61">61. الصف</option><option value="62">62. الجمعة</option><option value="63">63. المنافقون</option><option value="64">64. التغابن</option><option value="65">65. الطلاق</option><option value="66">66. التحريم</option><option value="67">67. الملك</option><option value="68">68. القلم</option><option value="69">69. الحاقة</option><option value="70">70. المعارج</option><option value="71">71. نوح</option><option value="72">72. الجن</option><option value="73">73. المزمل</option><option value="74">74. المدثر</option><option value="75">75. القيامة</option><option value="76">76. الإنسان</option><option value="77">77. المرسلات</option><option value="78">78. النبأ</option><option value="79">79. النازعات</option><option value="80">80. عبس</option><option value="81">81. التكوير</option><option value="82">82. الانفطار</option><option value="83">83. المطففين</option><option value="84">84. الانشقاق</option><option value="85">85. البروج</option><option value="86">86. الطارق</option><option value="87">87. الأعلى</option><option value="88">88. الغاشية</option><option value="89">89. الفجر</option><option value="90">90. البلد</option><option value="91">91. الشمس</option><option value="92">92. الليل</option><option value="93">93. الضحى</option><option value="94">94. الشرح</option><option value="95">95. التين</option><option value="96">96. العلق</option><option value="97">97. القدر</option><option value="98">98. البينة</option><option value="99">99. الزلزلة</option><option value="100">100. العاديات</option><option value="101">101. القارعة</option><option value="102">102. التكاثر</option><option value="103">103. العصر</option><option value="104">104. الهمزة</option><option value="105">105. الفيل</option><option value="106">106. قريش</option><option value="107">107. الماعون</option><option value="108">108. الكوثر</option><option value="109">109. الكافرون</option><option value="110">110. النصر</option><option value="111">111. المسد</option><option value="112">112. الإخلاص</option><option value="113">113. الفلق</option><option value="114">114. الناس</option></select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label class="form-label">السورة إلى:</label>
+                        <select id="surah-end" class="form-control">
+                            <!-- سيتم ملؤها بالجافاسكريبت -->
+                        <option value="1">1. الفاتحة</option><option value="2">2. البقرة</option><option value="3">3. آل عمران</option><option value="4">4. النساء</option><option value="5">5. المائدة</option><option value="6">6. الأنعام</option><option value="7">7. الأعراف</option><option value="8">8. الأنفال</option><option value="9">9. التوبة</option><option value="10">10. يونس</option><option value="11">11. هود</option><option value="12">12. يوسف</option><option value="13">13. الرعد</option><option value="14">14. إبراهيم</option><option value="15">15. الحجر</option><option value="16">16. النحل</option><option value="17">17. الإسراء</option><option value="18">18. الكهف</option><option value="19">19. مريم</option><option value="20">20. طه</option><option value="21">21. الأنبياء</option><option value="22">22. الحج</option><option value="23">23. المؤمنون</option><option value="24">24. النور</option><option value="25">25. الفرقان</option><option value="26">26. الشعراء</option><option value="27">27. النمل</option><option value="28">28. القصص</option><option value="29">29. العنكبوت</option><option value="30">30. الروم</option><option value="31">31. لقمان</option><option value="32">32. السجدة</option><option value="33">33. الأحزاب</option><option value="34">34. سبأ</option><option value="35">35. فاطر</option><option value="36">36. يس</option><option value="37">37. الصافات</option><option value="38">38. ص</option><option value="39">39. الزمر</option><option value="40">40. غافر</option><option value="41">41. فصلت</option><option value="42">42. الشورى</option><option value="43">43. الزخرف</option><option value="44">44. الدخان</option><option value="45">45. الجاثية</option><option value="46">46. الأحقاف</option><option value="47">47. محمد</option><option value="48">48. الفتح</option><option value="49">49. الحجرات</option><option value="50">50. ق</option><option value="51">51. الذاريات</option><option value="52">52. الطور</option><option value="53">53. النجم</option><option value="54">54. القمر</option><option value="55">55. الرحمن</option><option value="56">56. الواقعة</option><option value="57">57. الحديد</option><option value="58">58. المجادلة</option><option value="59">59. الحشر</option><option value="60">60. الممتحنة</option><option value="61">61. الصف</option><option value="62">62. الجمعة</option><option value="63">63. المنافقون</option><option value="64">64. التغابن</option><option value="65">65. الطلاق</option><option value="66">66. التحريم</option><option value="67">67. الملك</option><option value="68">68. القلم</option><option value="69">69. الحاقة</option><option value="70">70. المعارج</option><option value="71">71. نوح</option><option value="72">72. الجن</option><option value="73">73. المزمل</option><option value="74">74. المدثر</option><option value="75">75. القيامة</option><option value="76">76. الإنسان</option><option value="77">77. المرسلات</option><option value="78">78. النبأ</option><option value="79">79. النازعات</option><option value="80">80. عبس</option><option value="81">81. التكوير</option><option value="82">82. الانفطار</option><option value="83">83. المطففين</option><option value="84">84. الانشقاق</option><option value="85">85. البروج</option><option value="86">86. الطارق</option><option value="87">87. الأعلى</option><option value="88">88. الغاشية</option><option value="89">89. الفجر</option><option value="90">90. البلد</option><option value="91">91. الشمس</option><option value="92">92. الليل</option><option value="93">93. الضحى</option><option value="94">94. الشرح</option><option value="95">95. التين</option><option value="96">96. العلق</option><option value="97">97. القدر</option><option value="98">98. البينة</option><option value="99">99. الزلزلة</option><option value="100">100. العاديات</option><option value="101">101. القارعة</option><option value="102">102. التكاثر</option><option value="103">103. العصر</option><option value="104">104. الهمزة</option><option value="105">105. الفيل</option><option value="106">106. قريش</option><option value="107">107. الماعون</option><option value="108">108. الكوثر</option><option value="109">109. الكافرون</option><option value="110">110. النصر</option><option value="111">111. المسد</option><option value="112">112. الإخلاص</option><option value="113">113. الفلق</option><option value="114">114. الناس</option></select>
+                    </div>
+                    
+                    <div class="flex gap-16">
+                        <div class="form-group" style="flex: 1;">
+                            <label class="form-label">رقم الآية من:</label>
+                            <input type="number" id="verse-start" class="form-control" min="1" value="1" max="7">
+                            <div id="verse-start-error" class="error-message hidden"></div>
+                        </div>
+                        
+                        <div class="form-group" style="flex: 1;">
+                            <label class="form-label">رقم الآية إلى:</label>
+                            <input type="number" id="verse-end" class="form-control" min="1" value="1" max="6">
+                            <div id="verse-end-error" class="error-message hidden"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label class="form-label">عدد المحاولات:</label>
+                        <select id="attempts" class="form-control">
+                            <option value="5">5 أسئلة</option>
+                            <option value="10">10 أسئلة</option>
+                            <option value="15">15 سؤالاً</option>
+                            <option value="20">20 سؤالاً</option>
+                            <option value="infinite">بلا حدود</option>
+                        </select>
+                    </div>
+                    
+                    <div class="checkbox-container">
+                        <input type="checkbox" id="include-pages">
+                        <label for="include-pages">تضمين أرقام الصفحات في الاختبار</label>
+                    </div>
+                    
+                    <div id="verse-count" class="stat-card" style="margin: var(--space-16) 0;">
+                        <div class="stat-number">6231</div>
+                        <div class="stat-label">عدد الآيات في الاختبار</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="card__header">
+                    <h3>اختر نوع الاختبار</h3>
+                </div>
+                <div class="card__body">
+                    <div class="mode-selector">
+                        <div class="mode-card" data-mode="1">
+                            <div class="mode-title">الخيار الأول</div>
+                            <div class="mode-description">عرض رقم الآية واسم السورة، والمطلوب إيجاد نص الآية ورقم الصفحة</div>
+                        </div>
+                        
+                        <div class="mode-card" data-mode="2">
+                            <div class="mode-title">الخيار الثاني</div>
+                            <div class="mode-description">عرض نص الآية، والمطلوب إيجاد رقم الآية واسم السورة ورقم الصفحة</div>
+                        </div>
+                        
+                        <div class="mode-card" data-mode="3">
+                            <div class="mode-title">الخيار الثالث</div>
+                            <div class="mode-description">عرض نص الآية، والمطلوب إيجاد الآية السابقة والآية التالية</div>
+                        </div>
+                        
+                        <div class="mode-card" data-mode="4">
+                            <div class="mode-title">الخيار الرابع</div>
+                            <div class="mode-description">مزيج عشوائي من جميع الخيارات السابقة</div>
+                        </div>
+                    </div>
+                    
+                    <button id="start-quiz" class="btn btn--primary btn--lg btn--full" disabled="">
+                        بدء الاختبار
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- صفحة الاختبار -->
+        <div id="quiz-page" class="hidden">
+            <div class="quiz-header flex justify-between items-center">
+                <button id="home-btn" class="btn btn--secondary">العودة للرئيسية</button>
+                <div class="text-center">
+                    <div class="text-xl" id="question-counter">السؤال 1 من 10</div>
+                </div>
+                <div id="timer" class="text-lg">00:00</div>
+            </div>
+            
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-number" id="correct-count">0</div>
+                    <div class="stat-label">إجابات صحيحة</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" id="incorrect-count">0</div>
+                    <div class="stat-label">إجابات خاطئة</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" id="remaining-count">6231</div>
+                    <div class="stat-label">أسئلة متبقية</div>
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="card__body">
+                    <div id="question-content">
+                        <!-- محتوى السؤال سيتم إدراجه هنا -->
+                    </div>
+                    
+                    <div id="options-container" class="options-grid">
+                        <!-- خيارات الإجابة ستظهر هنا -->
+                    </div>
+                    
+                    <div class="flex justify-center gap-16" style="margin-top: var(--space-20);">
+                        <button id="submit-answer" class="btn btn--primary" disabled="">تأكيد الإجابة</button>
+                        <button id="next-question" class="btn btn--secondary display">السؤال التالي</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- صفحة النتائج -->
+        <div id="results-page" class="hidden">
+            <div class="text-center">
+                <h1>نتائج الاختبار</h1>
+            </div>
+            
+            <div class="card">
+                <div class="card__header">
+                    <h2>الملخص النهائي</h2>
+                </div>
+                <div class="card__body">
+                    <div class="stats-grid">
+                        <div class="stat-card">
+                            <div class="stat-number" id="final-correct">0</div>
+                            <div class="stat-label">إجابات صحيحة</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number" id="final-incorrect">0</div>
+                            <div class="stat-label">إجابات خاطئة</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number" id="final-percentage">0%</div>
+                            <div class="stat-label">النسبة المئوية</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number" id="final-time">00:00</div>
+                            <div class="stat-label">الوقت المنقضي</div>
+                        </div>
+                    </div>
+                    
+                    <div style="margin-top: var(--space-20);">
+                        <p><strong>وقت البداية:</strong> <span id="start-time"></span></p>
+                        <p><strong>وقت النهاية:</strong> <span id="end-time"></span></p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="card__header">
+                    <h3>تفاصيل الإجابات</h3>
+                </div>
+                <div class="card__body">
+                    <div id="detailed-results" class="results-grid">
+                        <!-- تفاصيل النتائج ستظهر هنا -->
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center">
+                <button id="restart-quiz" class="btn btn--primary btn--lg">إعادة الاختبار</button>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        // بيانات القرآن الكريم
+        const SURAHS = [
+            {id: 1, name: "الفاتحة", verses: 7, start_page: 1},
+            {id: 2, name: "البقرة", verses: 286, start_page: 2},
+            {id: 3, name: "آل عمران", verses: 200, start_page: 50},
+            {id: 4, name: "النساء", verses: 176, start_page: 77},
+            {id: 5, name: "المائدة", verses: 120, start_page: 106},
+            {id: 6, name: "الأنعام", verses: 165, start_page: 128},
+            {id: 7, name: "الأعراف", verses: 206, start_page: 151},
+            {id: 8, name: "الأنفال", verses: 75, start_page: 177},
+            {id: 9, name: "التوبة", verses: 129, start_page: 187},
+            {id: 10, name: "يونس", verses: 109, start_page: 208},
+            {id: 11, name: "هود", verses: 123, start_page: 221},
+            {id: 12, name: "يوسف", verses: 111, start_page: 235},
+            {id: 13, name: "الرعد", verses: 43, start_page: 249},
+            {id: 14, name: "إبراهيم", verses: 52, start_page: 255},
+            {id: 15, name: "الحجر", verses: 99, start_page: 262},
+            {id: 16, name: "النحل", verses: 128, start_page: 267},
+            {id: 17, name: "الإسراء", verses: 111, start_page: 282},
+            {id: 18, name: "الكهف", verses: 110, start_page: 293},
+            {id: 19, name: "مريم", verses: 98, start_page: 305},
+            {id: 20, name: "طه", verses: 135, start_page: 312},
+            {id: 21, name: "الأنبياء", verses: 112, start_page: 322},
+            {id: 22, name: "الحج", verses: 78, start_page: 332},
+            {id: 23, name: "المؤمنون", verses: 118, start_page: 342},
+            {id: 24, name: "النور", verses: 64, start_page: 350},
+            {id: 25, name: "الفرقان", verses: 77, start_page: 359},
+            {id: 26, name: "الشعراء", verses: 227, start_page: 367},
+            {id: 27, name: "النمل", verses: 93, start_page: 377},
+            {id: 28, name: "القصص", verses: 88, start_page: 385},
+            {id: 29, name: "العنكبوت", verses: 69, start_page: 396},
+            {id: 30, name: "الروم", verses: 60, start_page: 404},
+            {id: 31, name: "لقمان", verses: 34, start_page: 411},
+            {id: 32, name: "السجدة", verses: 30, start_page: 415},
+            {id: 33, name: "الأحزاب", verses: 73, start_page: 418},
+            {id: 34, name: "سبأ", verses: 54, start_page: 428},
+            {id: 35, name: "فاطر", verses: 45, start_page: 434},
+            {id: 36, name: "يس", verses: 83, start_page: 440},
+            {id: 37, name: "الصافات", verses: 182, start_page: 446},
+            {id: 38, name: "ص", verses: 88, start_page: 453},
+            {id: 39, name: "الزمر", verses: 75, start_page: 458},
+            {id: 40, name: "غافر", verses: 85, start_page: 467},
+            {id: 41, name: "فصلت", verses: 54, start_page: 477},
+            {id: 42, name: "الشورى", verses: 53, start_page: 483},
+            {id: 43, name: "الزخرف", verses: 89, start_page: 489},
+            {id: 44, name: "الدخان", verses: 59, start_page: 496},
+            {id: 45, name: "الجاثية", verses: 37, start_page: 499},
+            {id: 46, name: "الأحقاف", verses: 35, start_page: 502},
+            {id: 47, name: "محمد", verses: 38, start_page: 507},
+            {id: 48, name: "الفتح", verses: 29, start_page: 511},
+            {id: 49, name: "الحجرات", verses: 18, start_page: 515},
+            {id: 50, name: "ق", verses: 45, start_page: 518},
+            {id: 51, name: "الذاريات", verses: 60, start_page: 520},
+            {id: 52, name: "الطور", verses: 49, start_page: 523},
+            {id: 53, name: "النجم", verses: 62, start_page: 526},
+            {id: 54, name: "القمر", verses: 55, start_page: 528},
+            {id: 55, name: "الرحمن", verses: 78, start_page: 531},
+            {id: 56, name: "الواقعة", verses: 96, start_page: 534},
+            {id: 57, name: "الحديد", verses: 29, start_page: 537},
+            {id: 58, name: "المجادلة", verses: 22, start_page: 542},
+            {id: 59, name: "الحشر", verses: 24, start_page: 545},
+            {id: 60, name: "الممتحنة", verses: 13, start_page: 549},
+            {id: 61, name: "الصف", verses: 14, start_page: 551},
+            {id: 62, name: "الجمعة", verses: 11, start_page: 553},
+            {id: 63, name: "المنافقون", verses: 11, start_page: 554},
+            {id: 64, name: "التغابن", verses: 18, start_page: 556},
+            {id: 65, name: "الطلاق", verses: 12, start_page: 558},
+            {id: 66, name: "التحريم", verses: 12, start_page: 560},
+            {id: 67, name: "الملك", verses: 30, start_page: 562},
+            {id: 68, name: "القلم", verses: 52, start_page: 564},
+            {id: 69, name: "الحاقة", verses: 52, start_page: 566},
+            {id: 70, name: "المعارج", verses: 44, start_page: 568},
+            {id: 71, name: "نوح", verses: 28, start_page: 570},
+            {id: 72, name: "الجن", verses: 28, start_page: 572},
+            {id: 73, name: "المزمل", verses: 20, start_page: 574},
+            {id: 74, name: "المدثر", verses: 56, start_page: 575},
+            {id: 75, name: "القيامة", verses: 40, start_page: 577},
+            {id: 76, name: "الإنسان", verses: 31, start_page: 578},
+            {id: 77, name: "المرسلات", verses: 50, start_page: 580},
+            {id: 78, name: "النبأ", verses: 40, start_page: 582},
+            {id: 79, name: "النازعات", verses: 46, start_page: 583},
+            {id: 80, name: "عبس", verses: 42, start_page: 585},
+            {id: 81, name: "التكوير", verses: 29, start_page: 586},
+            {id: 82, name: "الانفطار", verses: 19, start_page: 587},
+            {id: 83, name: "المطففين", verses: 36, start_page: 587},
+            {id: 84, name: "الانشقاق", verses: 25, start_page: 589},
+            {id: 85, name: "البروج", verses: 22, start_page: 590},
+            {id: 86, name: "الطارق", verses: 17, start_page: 591},
+            {id: 87, name: "الأعلى", verses: 19, start_page: 591},
+            {id: 88, name: "الغاشية", verses: 26, start_page: 592},
+            {id: 89, name: "الفجر", verses: 30, start_page: 593},
+            {id: 90, name: "البلد", verses: 20, start_page: 594},
+            {id: 91, name: "الشمس", verses: 15, start_page: 595},
+            {id: 92, name: "الليل", verses: 21, start_page: 595},
+            {id: 93, name: "الضحى", verses: 11, start_page: 596},
+            {id: 94, name: "الشرح", verses: 8, start_page: 596},
+            {id: 95, name: "التين", verses: 8, start_page: 597},
+            {id: 96, name: "العلق", verses: 19, start_page: 597},
+            {id: 97, name: "القدر", verses: 5, start_page: 598},
+            {id: 98, name: "البينة", verses: 8, start_page: 598},
+            {id: 99, name: "الزلزلة", verses: 8, start_page: 599},
+            {id: 100, name: "العاديات", verses: 11, start_page: 599},
+            {id: 101, name: "القارعة", verses: 11, start_page: 600},
+            {id: 102, name: "التكاثر", verses: 8, start_page: 600},
+            {id: 103, name: "العصر", verses: 3, start_page: 601},
+            {id: 104, name: "الهمزة", verses: 9, start_page: 601},
+            {id: 105, name: "الفيل", verses: 5, start_page: 601},
+            {id: 106, name: "قريش", verses: 4, start_page: 602},
+            {id: 107, name: "الماعون", verses: 7, start_page: 602},
+            {id: 108, name: "الكوثر", verses: 3, start_page: 602},
+            {id: 109, name: "الكافرون", verses: 6, start_page: 603},
+            {id: 110, name: "النصر", verses: 3, start_page: 603},
+            {id: 111, name: "المسد", verses: 5, start_page: 603},
+            {id: 112, name: "الإخلاص", verses: 4, start_page: 604},
+            {id: 113, name: "الفلق", verses: 5, start_page: 604},
+            {id: 114, name: "الناس", verses: 6, start_page: 604}
+        ];
+        
+        // عينة من الآيات للاختبار
+        const SAMPLE_VERSES = {
+            1: {
+                1: {text: "بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ", page: 1},
+                2: {text: "الْحَمْدُ لِلَّهِ رَبِّ الْعَالَمِينَ", page: 1},
+                3: {text: "الرَّحْمَٰنِ الرَّحِيمِ", page: 1},
+                4: {text: "مَالِكِ يَوْمِ الدِّينِ", page: 1},
+                5: {text: "إِيَّاكَ نَعْبُدُ وَإِيَّاكَ نَسْتَعِينُ", page: 1},
+                6: {text: "اهْدِنَا الصِّرَاطَ الْمُسْتَقِيمَ", page: 1},
+                7: {text: "صِرَاطَ الَّذِينَ أَنْعَمْتَ عَلَيْهِمْ غَيْرِ الْمَغْضُوبِ عَلَيْهِمْ وَلَا الضَّالِّينَ", page: 1}
+            },
+            2: {
+                1: {text: "الم", page: 2},
+                2: {text: "ذَٰلِكَ الْكِتَابُ لَا رَيْبَ فِيهِ ۛ هُدًى لِّلْمُتَّقِينَ", page: 2},
+                3: {text: "الَّذِينَ يُؤْمِنُونَ بِالْغَيْبِ وَيُقِيمُونَ الصَّلَاةَ وَمِمَّا رَزَقْنَاهُمْ يُنفِقُونَ", page: 2},
+                4: {text: "وَالَّذِينَ يُؤْمِنُونَ بِمَا أُنزِلَ إِلَيْكَ وَمَا أُنزِلَ مِن قَبْلِكَ وَبِالْآخِرَةِ هُمْ يُوقِنُونَ", page: 2},
+                5: {text: "أُولَٰئِكَ عَلَىٰ هُدًى مِّن رَّبِّهِمْ ۖ وَأُولَٰئِكَ هُمُ الْمُفْلِحُونَ", page: 2}
+            },
+            112: {
+                1: {text: "قُلْ هُوَ اللَّهُ أَحَدٌ", page: 604},
+                2: {text: "اللَّهُ الصَّمَدُ", page: 604},
+                3: {text: "لَمْ يَلِدْ وَلَمْ يُولَدْ", page: 604},
+                4: {text: "وَلَمْ يَكُن لَّهُ كُفُوًا أَحَدٌ", page: 604}
+            },
+            113: {
+                1: {text: "قُلْ أَعُوذُ بِرَبِّ الْفَلَقِ", page: 604},
+                2: {text: "مِن شَرِّ مَا خَلَقَ", page: 604},
+                3: {text: "وَمِن شَرِّ غَاسِقٍ إِذَا وَقَبَ", page: 604},
+                4: {text: "وَمِن شَرِّ النَّفَّاثَاتِ فِي الْعُقَدِ", page: 604},
+                5: {text: "وَمِن شَرِّ حَاسِدٍ إِذَا حَسَدَ", page: 604}
+            },
+            114: {
+                1: {text: "قُلْ أَعُوذُ بِرَبِّ النَّاسِ", page: 604},
+                2: {text: "مَلِكِ النَّاسِ", page: 604},
+                3: {text: "إِلَٰهِ النَّاسِ", page: 604},
+                4: {text: "مِن شَرِّ الْوَسْوَاسِ الْخَنَّاسِ", page: 604},
+                5: {text: "الَّذِي يُوَسْوِسُ فِي صُدُورِ النَّاسِ", page: 604},
+                6: {text: "مِنَ الْجِنَّةِ وَالنَّاسِ", page: 604}
+            }
+        };
+        
+        // تنسيق الأرقام إلى أرقام لاتينية (فرنسية)
+        const fmt = (n) => new Intl.NumberFormat('fr-FR', {useGrouping:false}).format(Number(n));
+
+        // متغيرات التطبيق
+        let currentPage = 'home';
+        let quizConfig = {
+            surahStart: 1,
+            surahEnd: 114,
+            verseStart: 1,
+            verseEnd: 1,
+            attempts: 10,
+            includePages: false,
+            mode: null
+        };
+        
+        let quizState = {
+            questions: [],
+            currentQuestion: 0,
+            correctAnswers: 0,
+            incorrectAnswers: 0,
+            startTime: null,
+            endTime: null,
+            activeTime: 0,
+            lastActiveTime: null,
+            isActive: true,
+            results: [],
+            usedVerses: new Set(),
+            currentStep: 0,
+            currentQuestionSteps: [],
+            selectedAnswer: null
+        };
+        
+        // منع النوم على الجوال
+        let wakeLock = null;
+        
+        async function requestWakeLock() {
+            try {
+                if ('wakeLock' in navigator) {
+                    wakeLock = await navigator.wakeLock.request('screen');
+                }
+            } catch (err) {
+                console.log('Wake lock failed:', err);
+            }
+        }
+        
+        // إدارة النشاط والوقت
+        function updateActiveTime() {
+            if (quizState.isActive && quizState.lastActiveTime) {
+                quizState.activeTime += Date.now() - quizState.lastActiveTime;
+            }
+            quizState.lastActiveTime = Date.now();
+        }
+        
+        function handleVisibilityChange() {
+            if (document.hidden) {
+                quizState.isActive = false;
+                updateActiveTime();
+            } else {
+                quizState.isActive = true;
+                quizState.lastActiveTime = Date.now();
+                if (wakeLock === null) {
+                    requestWakeLock();
+                }
+            }
+        }
+        
+        // تهيئة التطبيق
+        function initializeApp() {
+            populateSurahSelectors();
+            setupEventListeners();
+            calculateVerseCount();
+
+const savedFilters = sessionStorage.getItem('quizFilters');
+if (savedFilters) {
+  const filters = JSON.parse(savedFilters);
+  document.getElementById('surah-start').value = filters.surahStart;
+  document.getElementById('surah-end').value = filters.surahEnd;
+  document.getElementById('verse-start').value = filters.verseStart;
+  document.getElementById('verse-end').value = filters.verseEnd;
+  document.getElementById('attempts').value = filters.attempts;
+  document.getElementById('include-pages').checked = filters.includePages;
+
+  quizConfig.surahStart = +filters.surahStart;
+  quizConfig.surahEnd = +filters.surahEnd;
+  quizConfig.verseStart = +filters.verseStart;
+  quizConfig.verseEnd = +filters.verseEnd;
+  quizConfig.attempts = filters.attempts === 'infinite' ? Infinity : +filters.attempts;
+  quizConfig.includePages = filters.includePages;
+
+  if (filters.mode) {
+    quizConfig.mode = +filters.mode;
+    document.querySelectorAll('.mode-card').forEach(c => c.classList.remove('selected'));
+    const modeCard = document.querySelector(`.mode-card[data-mode="${quizConfig.mode}"]`);
+    if (modeCard) modeCard.classList.add('selected');
+  }
+
+  updateStartButtonState();
+
+  sessionStorage.removeItem('quizFilters');
+}
+            
+            // إعداد مراقبة النشاط
+            document.addEventListener('visibilitychange', handleVisibilityChange);
+            
+            // طلب منع النوم
+            requestWakeLock();
+        }
+        
+        // ملء قوائم السور
+        function populateSurahSelectors() {
+            const startSelect = document.getElementById('surah-start');
+            const endSelect = document.getElementById('surah-end');
+            
+            SURAHS.forEach(surah => {
+                const option1 = document.createElement('option');
+                option1.value = surah.id;
+                option1.textContent = `${surah.id}. ${surah.name}`;
+                startSelect.appendChild(option1);
+                
+                const option2 = document.createElement('option');
+                option2.value = surah.id;
+                option2.textContent = `${surah.id}. ${surah.name}`;
+                endSelect.appendChild(option2);
+            });
+            
+            // تعيين القيم الافتراضية
+            startSelect.value = 1;
+            endSelect.value = 114;
+            
+            updateVerseInputs();
+        }
+        
+        // إعداد مستمعي الأحداث
+        function setupEventListeners() {
+            const updateStartButton = () => {
+                const count = calculateVerseCount();
+                const startBtn = document.getElementById('start-quiz');
+                startBtn.disabled = !(quizConfig.mode && count > 0);
+                document.getElementById('remaining-count').textContent = fmt(count);
+            };
+            document.getElementById('surah-start').addEventListener('change', function() {
+                if (parseInt(document.getElementById('surah-start').value) > parseInt(document.getElementById('surah-end').value)) {
+                    document.getElementById('surah-end').value = this.value;
+                    quizConfig.surahEnd = parseInt(this.value);
+                }
+
+                quizConfig.surahStart = parseInt(this.value);
+                updateVerseInputs();
+                updateStartButton();
+            });
+            
+            document.getElementById('surah-end').addEventListener('change', function() {
+    const surahId = parseInt(this.value);
+    const surah = SURAHS.find(s => s.id === surahId);
+
+    // Met à jour le max et la valeur du filtre verse-end
+    const verseEndInput = document.getElementById('verse-end');
+    verseEndInput.max = surah.verses;
+    verseEndInput.value = surah.verses;
+    quizConfig.verseEnd = surah.verses;
+
+    if (surahId < parseInt(document.getElementById('surah-start').value)) {
+        document.getElementById('surah-start').value = this.value;
+        quizConfig.surahStart = surahId;
+    }
+
+    quizConfig.surahEnd = surahId;
+
+    // Mise à jour des versets et du compteur
+    updateVerseInputs();
+
+    // NOUVEL APPEL IMPORTANT pour mettre à jour le compteur
+    calculateVerseCount();
+
+    updateStartButtonState();
+});
+
+
+            
+            document.getElementById('verse-start').addEventListener('input', function() {
+                validateVerseInput('start');
+                updateStartButton();
+            });
+            
+            document.getElementById('verse-end').addEventListener('input', function() {
+                validateVerseInput('end');
+                updateStartButton();
+            });
+            
+            document.getElementById('attempts').addEventListener('change', function() {
+                quizConfig.attempts = this.value === 'infinite' ? Infinity : parseInt(this.value);
+            });
+            
+            document.getElementById('include-pages').addEventListener('change', function() {
+                quizConfig.includePages = this.checked;
+            });
+
+            // تحديث زر البدء عند التحميل الأولي
+            const initStartBtn = () => {
+                const count = calculateVerseCount();
+                document.getElementById('start-quiz').disabled = true;
+                document.getElementById('remaining-count').textContent = fmt(count);
+            };
+            initStartBtn();
+            
+            // اختيار نمط الاختبار
+            document.querySelectorAll('.mode-card').forEach(card => {
+                card.addEventListener('click', function() {
+                    document.querySelectorAll('.mode-card').forEach(c => c.classList.remove('selected'));
+                    this.classList.add('selected');
+                    quizConfig.mode = parseInt(this.dataset.mode);
+                    const count = calculateVerseCount();
+                    document.getElementById('start-quiz').disabled = !(quizConfig.mode && count > 0);
+                });
+            });
+            
+            document.getElementById('start-quiz').addEventListener('click', startQuiz);
+            document.getElementById('home-btn').addEventListener('click', goHome);
+            document.getElementById('submit-answer').addEventListener('click', submitAnswer);
+            document.getElementById('next-question').addEventListener('click', nextQuestion);
+            document.getElementById('restart-quiz').addEventListener('click', goHome);
+        }
+        
+        // تحديث حقول الآيات
+        function updateVerseInputs() {
+            const startSurah = SURAHS.find(s => s.id === quizConfig.surahStart);
+            const endSurah = SURAHS.find(s => s.id === quizConfig.surahEnd);
+            
+            const verseStartInput = document.getElementById('verse-start');
+            const verseEndInput = document.getElementById('verse-end');
+            
+            verseStartInput.max = startSurah.verses;
+            verseEndInput.max = endSurah.verses;
+            
+            if (parseInt(verseStartInput.value) > startSurah.verses) {
+                verseStartInput.value = startSurah.verses;
+            }
+            
+            if (parseInt(verseEndInput.value) > endSurah.verses) {
+                verseEndInput.value = endSurah.verses;
+            }
+            
+            quizConfig.verseStart = parseInt(verseStartInput.value);
+            quizConfig.verseEnd = parseInt(verseEndInput.value);
+        }
+        
+        // التحقق من صحة أرقام الآيات
+        function validateVerseInput(type) {
+            const input = document.getElementById(`verse-${type}`);
+            const errorDiv = document.getElementById(`verse-${type}-error`);
+            const surahId = type === 'start' ? quizConfig.surahStart : quizConfig.surahEnd;
+            const surah = SURAHS.find(s => s.id === surahId);
+            const value = parseInt(input.value);
+            
+            if (value > surah.verses) {
+                input.value = surah.verses;
+                errorDiv.textContent = `الحد الأقصى للآيات في سورة ${surah.name} هو ${surah.verses}`;
+                errorDiv.classList.remove('hidden');
+            } else {
+                errorDiv.classList.add('hidden');
+            }
+            
+            if (type === 'start') {
+                quizConfig.verseStart = parseInt(input.value);
+            } else {
+                quizConfig.verseEnd = parseInt(input.value);
+            }
+        }
+        
+        // حساب عدد الآيات
+        function calculateVerseCount() {
+            let totalVerses = 0;
+            
+            for (let surahId = quizConfig.surahStart; surahId <= quizConfig.surahEnd; surahId++) {
+                const surah = SURAHS.find(s => s.id === surahId);
+                if (surahId === quizConfig.surahStart && surahId === quizConfig.surahEnd) {
+                    // نفس السورة
+                    totalVerses += Math.max(0, quizConfig.verseEnd - quizConfig.verseStart + 1);
+                } else if (surahId === quizConfig.surahStart) {
+                    // السورة الأولى
+                    totalVerses += Math.max(0, surah.verses - quizConfig.verseStart + 1);
+                } else if (surahId === quizConfig.surahEnd) {
+                    // السورة الأخيرة
+                    totalVerses += Math.max(0, quizConfig.verseEnd);
+                } else {
+                    // السور الوسطى
+                    totalVerses += surah.verses;
+                }
+            }
+            
+            document.querySelector('#verse-count .stat-number').textContent = fmt(totalVerses);
+            return totalVerses;
+        }
+        
+        // بدء الاختبار
+        function startQuiz() {
+            if (!quizConfig.mode) return;
+            
+            // إعداد حالة الاختبار
+            quizState = {
+                questions: [],
+                currentQuestion: 0,
+                correctAnswers: 0,
+                incorrectAnswers: 0,
+                startTime: new Date(),
+                endTime: null,
+                activeTime: 0,
+                lastActiveTime: Date.now(),
+                isActive: true,
+                results: [],
+                usedVerses: new Set(),
+                currentStep: 0,
+                currentQuestionSteps: [],
+                selectedAnswer: null
+            };
+            
+            generateQuestions();
+            showPage('quiz');
+            showQuestion();
+            startTimer();
+        }
+        
+        // توليد الأسئلة
+        function generateQuestions() {
+            const totalVerses = calculateVerseCount();
+            const questionCount = quizConfig.attempts === Infinity ? totalVerses : Math.min(quizConfig.attempts, totalVerses);
+            let safety = 0;
+            while (quizState.questions.length < questionCount && safety < 2000) {
+                const question = generateRandomQuestion();
+                if (question) {
+                    quizState.questions.push(question);
+                }
+                safety++;
+            }
+        }
+        
+        // توليد سؤال عشوائي
+        function generateRandomQuestion() {
+            const availableVerses = getAvailableVerses();
+            if (availableVerses.length === 0) return null;
+            
+            const randomVerse = availableVerses[Math.floor(Math.random() * availableVerses.length)];
+            
+            let mode = quizConfig.mode;
+            if (mode === 4) {
+                mode = Math.floor(Math.random() * 3) + 1; // اختيار عشوائي من 1-3
+            }
+            
+            const q = createQuestion(randomVerse, mode);
+            if (!q || !q.steps || q.steps.length === 0) {
+                return null;
+            }
+            quizState.usedVerses.add(`${randomVerse.surahId}-${randomVerse.verseNumber}`);
+            return q;
+        }
+        
+        // الحصول على الآيات المتاحة
+        function getAvailableVerses() {
+            const verses = [];
+            
+            for (let surahId = quizConfig.surahStart; surahId <= quizConfig.surahEnd; surahId++) {
+                const surah = SURAHS.find(s => s.id === surahId);
+                let startVerse, endVerse;
+                
+                if (surahId === quizConfig.surahStart && surahId === quizConfig.surahEnd) {
+                    startVerse = quizConfig.verseStart;
+                    endVerse = quizConfig.verseEnd;
+                } else if (surahId === quizConfig.surahStart) {
+                    startVerse = quizConfig.verseStart;
+                    endVerse = surah.verses;
+                } else if (surahId === quizConfig.surahEnd) {
+                    startVerse = 1;
+                    endVerse = quizConfig.verseEnd;
+                } else {
+                    startVerse = 1;
+                    endVerse = surah.verses;
+                }
+                
+                for (let verseNum = startVerse; verseNum <= endVerse; verseNum++) {
+                    const key = `${surahId}-${verseNum}`;
+                    if (!quizState.usedVerses.has(key)) {
+                        if (SAMPLE_VERSES[surahId] && SAMPLE_VERSES[surahId][verseNum]) {
+                            verses.push({
+                                surahId: surahId,
+                                surahName: surah.name,
+                                verseNumber: verseNum,
+                                text: getVerseText(surahId, verseNum),
+                                page: getVersePage(surahId, verseNum)
+                            });
+                        }
+                    }
+                }
+            }
+            
+            return verses;
+        }
+        
+        // الحصول على نص الآية
+        function getVerseText(surahId, verseNumber) {
+            if (SAMPLE_VERSES[surahId] && SAMPLE_VERSES[surahId][verseNumber]) {
+                return SAMPLE_VERSES[surahId][verseNumber].text;
+            }
+            // إذا لم تكن الآية متوفرة، نستخدم نصاً توضيحياً
+            return `آية ${verseNumber} من سورة ${SURAHS.find(s => s.id === surahId).name}`;
+        }
+        
+        // الحصول على رقم صفحة الآية
+        function getVersePage(surahId, verseNumber) {
+            if (SAMPLE_VERSES[surahId] && SAMPLE_VERSES[surahId][verseNumber]) {
+                return SAMPLE_VERSES[surahId][verseNumber].page;
+            }
+            // تقدير تقريبي للصفحة
+            const surah = SURAHS.find(s => s.id === surahId);
+            const approximatePage = surah.start_page + Math.floor((verseNumber - 1) / 10);
+            return Math.min(approximatePage, 604);
+        }
+        
+        // إنشاء سؤال
+        function createQuestion(verse, mode) {
+            const question = {
+                verse: verse,
+                mode: mode,
+                steps: []
+            };
+            
+            switch (mode) {
+                case 1: // عرض رقم الآية واسم السورة، إيجاد النص والصفحة
+                    question.steps.push({
+                        type: 'find-text',
+                        question: `ما هو نص الآية رقم <span class="text-blue">${verse.verseNumber}</span> من سورة <span class="text-blue">${verse.surahName}</span>؟`,
+                        correctAnswer: verse.text,
+                        options: generateTextOptions(verse.text)
+                    });
+                    
+                    if (quizConfig.includePages) {
+                        question.steps.push({
+                            type: 'find-page',
+                            question: `ما هو رقم الصفحة للآية رقم <span class="text-blue">${verse.verseNumber}</span> من سورة <span class="text-blue">${verse.surahName}</span>؟`,
+                            correctAnswer: verse.page,
+                            options: generatePageOptions(verse.page)
+                        });
+                    }
+                    break;
+                    
+                case 2: // عرض النص، إيجاد رقم الآية واسم السورة والصفحة
+                    question.steps.push({
+                        type: 'find-verse-number',
+                        question: `ما هو رقم هذه الآية؟`,
+                        verseText: verse.text,
+                        correctAnswer: verse.verseNumber,
+                        options: generateVerseNumberOptions(verse.verseNumber)
+                    });
+                    
+                    question.steps.push({
+                        type: 'find-surah-name',
+                        question: `ما هو اسم السورة لهذه الآية؟`,
+                        verseText: verse.text,
+                        correctAnswer: verse.surahName,
+                        options: generateSurahNameOptions(verse.surahName)
+                    });
+                    
+                    if (quizConfig.includePages) {
+                        question.steps.push({
+                            type: 'find-page',
+                            question: `ما هو رقم الصفحة لهذه الآية؟`,
+                            verseText: verse.text,
+                            correctAnswer: verse.page,
+                            options: generatePageOptions(verse.page)
+                        });
+                    }
+                    break;
+                    
+                case 3: // عرض النص، إيجاد الآية السابقة والتالية
+                    const prevVerse = getPreviousVerse(verse);
+                    const nextVerse = getNextVerse(verse);
+                    
+                    if (prevVerse) {
+                        question.steps.push({
+                            type: 'find-previous',
+                            question: `ما هو نص الآية السابقة لهذه الآية؟`,
+                            verseText: verse.text,
+                            correctAnswer: prevVerse.text,
+                            options: generateTextOptions(prevVerse.text)
+                        });
+                    }
+                    
+                    if (nextVerse) {
+                        question.steps.push({
+                            type: 'find-next',
+                            question: `ما هو نص الآية التالية لهذه الآية؟`,
+                            verseText: verse.text,
+                            correctAnswer: nextVerse.text,
+                            options: generateTextOptions(nextVerse.text)
+                        });
+                    }
+                    break;
+            }
+            
+            return question;
+        }
+        
+        // الحصول على الآية السابقة
+        function hasSample(surahId, verseNumber) {
+            return !!(SAMPLE_VERSES[surahId] && SAMPLE_VERSES[surahId][verseNumber]);
+        }
+
+        function getPreviousVerse(verse) {
+            if (verse.verseNumber > 1) {
+                const num = verse.verseNumber - 1;
+                if (!hasSample(verse.surahId, num)) return null;
+                return {
+                    surahId: verse.surahId,
+                    surahName: verse.surahName,
+                    verseNumber: num,
+                    text: getVerseText(verse.surahId, num),
+                    page: getVersePage(verse.surahId, num)
+                };
+            } else if (verse.surahId > 1) {
+                const prevSurah = SURAHS.find(s => s.id === verse.surahId - 1);
+                if (!hasSample(prevSurah.id, prevSurah.verses)) return null;
+                return {
+                    surahId: prevSurah.id,
+                    surahName: prevSurah.name,
+                    verseNumber: prevSurah.verses,
+                    text: getVerseText(prevSurah.id, prevSurah.verses),
+                    page: getVersePage(prevSurah.id, prevSurah.verses)
+                };
+            }
+            return null;
+        }
+        
+        // الحصول على الآية التالية
+        function getNextVerse(verse) {
+            const currentSurah = SURAHS.find(s => s.id === verse.surahId);
+            if (verse.verseNumber < currentSurah.verses) {
+                const num = verse.verseNumber + 1;
+                if (!hasSample(verse.surahId, num)) return null;
+                return {
+                    surahId: verse.surahId,
+                    surahName: verse.surahName,
+                    verseNumber: num,
+                    text: getVerseText(verse.surahId, num),
+                    page: getVersePage(verse.surahId, num)
+                };
+            } else if (verse.surahId < 114) {
+                const nextSurah = SURAHS.find(s => s.id === verse.surahId + 1);
+                if (!hasSample(nextSurah.id, 1)) return null;
+                return {
+                    surahId: nextSurah.id,
+                    surahName: nextSurah.name,
+                    verseNumber: 1,
+                    text: getVerseText(nextSurah.id, 1),
+                    page: getVersePage(nextSurah.id, 1)
+                };
+            }
+            return null;
+        }
+        
+        // توليد خيارات النصوص
+        function generateTextOptions(correctText) {
+            const options = [correctText];
+            const availableTexts = [];
+            
+            // جمع النصوص المتاحة
+            Object.keys(SAMPLE_VERSES).forEach(surahId => {
+                Object.keys(SAMPLE_VERSES[surahId]).forEach(verseNum => {
+                    const text = SAMPLE_VERSES[surahId][verseNum].text;
+                    if (text !== correctText && text.length > 10) {
+                        availableTexts.push(text);
+                    }
+                });
+            });
+            
+            // اختيار 4 خيارات عشوائية
+            while (options.length < 5 && availableTexts.length > 0) {
+                const randomIndex = Math.floor(Math.random() * availableTexts.length);
+                const text = availableTexts.splice(randomIndex, 1)[0];
+                if (!options.includes(text)) {
+                    options.push(text);
+                }
+            }
+            
+            // إضافة خيارات افتراضية إذا لزم الأمر
+            while (options.length < 5) {
+                options.push(`خيار ${options.length}`);
+            }
+            
+            return shuffleArray(options);
+        }
+        
+        // توليد خيارات أرقام الآيات
+        function generateVerseNumberOptions(correctNumber) {
+            const options = [correctNumber];
+            const used = new Set([correctNumber]);
+            
+            while (options.length < 5) {
+                const randomNumber = Math.max(1, correctNumber + Math.floor(Math.random() * 21) - 10);
+                if (!used.has(randomNumber)) {
+                    options.push(randomNumber);
+                    used.add(randomNumber);
+                }
+            }
+            
+            return shuffleArray(options);
+        }
+        
+        // توليد خيارات أسماء السور
+        function generateSurahNameOptions(correctName) {
+            const options = [correctName];
+            const availableNames = SURAHS.map(s => s.name).filter(name => name !== correctName);
+            
+            while (options.length < 5 && availableNames.length > 0) {
+                const randomIndex = Math.floor(Math.random() * availableNames.length);
+                options.push(availableNames.splice(randomIndex, 1)[0]);
+            }
+            
+            return shuffleArray(options);
+        }
+        
+        // توليد خيارات أرقام الصفحات
+        function generatePageOptions(correctPage) {
+            const options = [correctPage];
+            const used = new Set([correctPage]);
+            
+            while (options.length < 5) {
+                const randomPage = Math.max(1, Math.min(604, correctPage + Math.floor(Math.random() * 21) - 10));
+                if (!used.has(randomPage)) {
+                    options.push(randomPage);
+                    used.add(randomPage);
+                }
+            }
+            
+            return shuffleArray(options);
+        }
+        
+        // خلط المصفوفة
+        function shuffleArray(array) {
+            const shuffled = [...array];
+            for (let i = shuffled.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+            }
+            return shuffled;
+        }
+        
+        // عرض السؤال
+        function showQuestion() {
+            const question = quizState.questions[quizState.currentQuestion];
+            if (!question) {
+                endQuiz();
+                return;
+            }
+            
+            quizState.currentQuestionSteps = question.steps;
+            quizState.currentStep = 0;
+            quizState.selectedAnswer = null;
+            
+            updateQuestionCounter();
+            showCurrentStep();
+        }
+        
+        // عرض الخطوة الحالية
+        function showCurrentStep() {
+            const question = quizState.questions[quizState.currentQuestion];
+            const step = question.steps[quizState.currentStep];
+            
+            if (!step) {
+                nextQuestion();
+                return;
+            }
+            
+            const questionContent = document.getElementById('question-content');
+            const optionsContainer = document.getElementById('options-container');
+            
+            // عرض السؤال
+            let html = `<h3>${step.question}</h3>`;
+            
+            if (step.verseText) {
+                html += `<div class="verse-text">${step.verseText}</div>`;
+            }
+            
+            questionContent.innerHTML = html;
+            
+            // عرض الخيارات
+            optionsContainer.innerHTML = '';
+            step.options.forEach((option, index) => {
+                const optionDiv = document.createElement('div');
+                optionDiv.className = 'option-btn';
+                const displayText = (typeof option === 'number') ? fmt(option) : option;
+                optionDiv.textContent = displayText;
+                optionDiv.dataset.value = (typeof option === 'number') ? option.toString() : option;
+                optionDiv.addEventListener('click', function() {
+                    selectOption(this);
+                });
+                optionsContainer.appendChild(optionDiv);
+            });
+            
+            // إعادة تعيين أزرار التحكم
+            document.getElementById('submit-answer').disabled = true;
+            document.getElementById('next-question').classList.add('hidden');
+        }
+        
+        // اختيار خيار
+        function selectOption(optionElement) {
+            document.querySelectorAll('.option-btn').forEach(btn => {
+                btn.classList.remove('selected');
+            });
+            
+            optionElement.classList.add('selected');
+            quizState.selectedAnswer = optionElement.dataset.value;
+            document.getElementById('submit-answer').disabled = false;
+        }
+        
+        // تأكيد الإجابة
+        function submitAnswer() {
+            if (!quizState.selectedAnswer) return;
+            
+            const question = quizState.questions[quizState.currentQuestion];
+            const step = question.steps[quizState.currentStep];
+            const isCorrect = quizState.selectedAnswer === step.correctAnswer.toString();
+            
+            // تلوين الخيارات
+            document.querySelectorAll('.option-btn').forEach(btn => {
+                if (btn.dataset.value === step.correctAnswer.toString()) {
+                    btn.classList.add('correct');
+                } else if (btn.classList.contains('selected')) {
+                    btn.classList.add('incorrect');
+                }
+                btn.style.pointerEvents = 'none';
+            });
+            
+            // تسجيل النتيجة
+            if (isCorrect) {
+                quizState.correctAnswers++;
+            } else {
+                quizState.incorrectAnswers++;
+            }
+            
+            // حفظ النتيجة التفصيلية
+            quizState.results.push({
+                question: step.question,
+                verseText: step.verseText || '',
+                userAnswer: quizState.selectedAnswer,
+                correctAnswer: step.correctAnswer,
+                isCorrect: isCorrect,
+                verse: question.verse
+            });
+            
+            updateStats();
+            
+            // إخفاء زر التأكيد وإظهار زر التالي
+            document.getElementById('submit-answer').classList.add('hidden');
+            document.getElementById('next-question').classList.remove('hidden');
+        }
+        
+        // السؤال التالي
+        function nextQuestion() {
+            quizState.currentStep++;
+            
+            // إذا انتهت خطوات السؤال الحالي
+            if (quizState.currentStep >= quizState.currentQuestionSteps.length) {
+                quizState.currentQuestion++;
+                quizState.currentStep = 0;
+                
+                // التحقق من انتهاء الاختبار
+                if (quizState.currentQuestion >= quizState.questions.length) {
+                    endQuiz();
+                    return;
+                }
+            }
+            
+            // إعادة تعيين الأزرار
+            document.getElementById('submit-answer').classList.remove('hidden');
+            document.getElementById('next-question').classList.add('hidden');
+            
+            showCurrentStep();
+        }
+        
+        // تحديث الإحصائيات
+        function updateStats() {
+            document.getElementById('correct-count').textContent = fmt(quizState.correctAnswers);
+            document.getElementById('incorrect-count').textContent = fmt(quizState.incorrectAnswers);
+            
+            const remaining = quizState.questions.length - quizState.currentQuestion - 1;
+            document.getElementById('remaining-count').textContent = fmt(Math.max(0, remaining));
+        }
+        
+        // تحديث عداد الأسئلة
+        function updateQuestionCounter() {
+            const counter = document.getElementById('question-counter');
+            counter.textContent = `السؤال ${fmt(quizState.currentQuestion + 1)} من ${fmt(quizState.questions.length)}`;
+        }
+        
+        // بدء المؤقت
+        function startTimer() {
+            setInterval(updateTimer, 1000);
+        }
+        
+        // تحديث المؤقت
+        function updateTimer() {
+            if (currentPage === 'quiz' && quizState.isActive) {
+                updateActiveTime();
+            }
+            
+            const timerElement = document.getElementById('timer');
+            if (timerElement) {
+                const minutes = Math.floor(quizState.activeTime / 60000);
+                const seconds = Math.floor((quizState.activeTime % 60000) / 1000);
+                timerElement.textContent = `${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
+            }
+        }
+        
+        // انتهاء الاختبار
+        function endQuiz() {
+            quizState.endTime = new Date();
+            updateActiveTime();
+            showResults();
+        }
+        
+        // عرض النتائج
+        function showResults() {
+            showPage('results');
+            
+            // الإحصائيات النهائية
+            document.getElementById('final-correct').textContent = quizState.correctAnswers;
+            document.getElementById('final-incorrect').textContent = quizState.incorrectAnswers;
+            
+            const total = quizState.correctAnswers + quizState.incorrectAnswers;
+            const percentage = total > 0 ? Math.round((quizState.correctAnswers / total) * 100) : 0;
+            document.getElementById('final-percentage').textContent = `${fmt(percentage)}%`;
+            
+            const minutes = Math.floor(quizState.activeTime / 60000);
+            const seconds = Math.floor((quizState.activeTime % 60000) / 1000);
+            document.getElementById('final-time').textContent = `${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
+            
+            // أوقات البداية والنهاية
+            document.getElementById('start-time').textContent = quizState.startTime.toLocaleString('fr-FR');
+            document.getElementById('end-time').textContent = quizState.endTime.toLocaleString('fr-FR');
+            
+            // النتائج التفصيلية
+            const detailedResults = document.getElementById('detailed-results');
+            detailedResults.innerHTML = '';
+            
+            const formatAns = (val) => {
+                if (typeof val === 'number') return fmt(val);
+                if (typeof val === 'string' && val !== '' && !isNaN(Number(val))) return fmt(Number(val));
+                return val;
+            };
+            quizState.results.forEach((result, index) => {
+                const resultDiv = document.createElement('div');
+                resultDiv.className = `result-item ${result.isCorrect ? 'correct' : 'incorrect'}`;
+                
+                let html = `
+                    <div><strong>السؤال ${fmt(index + 1)}:</strong> ${result.question}</div>
+                `;
+                
+                if (result.verseText) {
+                    html += `<div class="verse-text" style="margin: 8px 0; font-size: 14px;">${result.verseText}</div>`;
+                }
+                
+                html += `
+                    <div><strong>إجابتك:</strong> ${formatAns(result.userAnswer)}</div>
+                    <div><strong>الإجابة الصحيحة:</strong> ${formatAns(result.correctAnswer)}</div>
+                    <div><strong>النتيجة:</strong> ${result.isCorrect ? '✓ صحيح' : '✗ خطأ'}</div>
+                `;
+                
+                if (result.verse) {
+                    html += `<div><strong>المرجع:</strong> سورة ${result.verse.surahName} - الآية ${result.verse.verseNumber}</div>`;
+                }
+                
+                resultDiv.innerHTML = html;
+                detailedResults.appendChild(resultDiv);
+            });
+        }
+        
+        // عرض صفحة
+        function showPage(pageName) {
+            document.querySelectorAll('[id$="-page"]').forEach(page => {
+                page.classList.add('hidden');
+            });
+            
+            document.getElementById(`${pageName}-page`).classList.remove('hidden');
+            currentPage = pageName;
+        }
+        
+        // العودة للرئيسية
+        function goHome() {
+  // Sauvegarder l’état des filtres pour restauration
+  sessionStorage.setItem('quizFilters', JSON.stringify({
+    surahStart: document.getElementById('surah-start').value,
+    surahEnd: document.getElementById('surah-end').value,
+    verseStart: document.getElementById('verse-start').value,
+    verseEnd: document.getElementById('verse-end').value,
+    attempts: document.getElementById('attempts').value,
+    includePages: document.getElementById('include-pages').checked,
+    mode: quizConfig.mode
+  }));
+
+  // Retour affichage page d'accueil
+  showPage('home');
+
+  // Réinitialiser état quizState pour préparation quiz suivant
+  quizState = {
+    questions: [],
+    currentQuestion: 0,
+    correctAnswers: 0,
+    incorrectAnswers: 0,
+    startTime: null,
+    endTime: null,
+    activeTime: 0,
+    lastActiveTime: null,
+    isActive: true,
+    results: [],
+    usedVerses: new Set(),
+    currentStep: 0,
+    currentQuestionSteps: [],
+    selectedAnswer: null
+  };
+
+  // Réactiver et afficher bouton تأكيد الإجابة (ligne 1732)
+  const submitBtn = document.getElementById('submit-answer');
+  submitBtn.disabled = true;
+  submitBtn.classList.remove('hidden');
+
+  // Masquer bouton السؤال التالي (ligne 1733)
+  document.getElementById('next-question').classList.add('hidden');
+
+  // Actualiser bouton بدء الاختبار
+  updateStartButtonState();
+}
+
+
+        
+        // تهيئة التطبيق عند تحميل الصفحة
+        document.addEventListener('DOMContentLoaded', initializeApp);
+        
+        // تسجيل Service Worker
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', function() {
+                navigator.serviceWorker.register('sw.js')
+                    .then(function(registration) {
+                        console.log('SW registered: ', registration);
+                    })
+                    .catch(function(registrationError) {
+                        console.log('SW registration failed: ', registrationError);
+                    });
+            });
+        }
+    </script>
+        <div>
+          <div class="cb-connect-sidebar-loading-outer">
+            <div class="cb-connect-sidebar-loading-inner">
+              <img src="chrome-extension://pmnhcgfcafcnkbengdcanjablaabjplo/src/assets/logo.svg" width="40" height="40">
+              <div class="cb-connect-sidebar-loading-inner-text">Loading...</div>
+            </div>
+          </div>
+        </div>
+      </div><div><iframe id="cb-connect-sidebar-iframe" lang="en" class="cb-connect-sidebar-container" style="height: 100vh; min-height: 100vh" src="./اختبار الآيات القرآنية71_files/saved_resource.html"></iframe></div></div><div id="cb-connect-open-button-outer" class="cb-connect-open-button-is-tucked" style="inset: 64px 0px auto auto;"><div id="cb-connect-open-button-inner" style="background: rgb(20, 140, 252);">
+          <img src="chrome-extension://pmnhcgfcafcnkbengdcanjablaabjplo/src/assets/logo-dark-background.svg" width="20" height="20" style="user-select: none;width: 20px !important;height:20px !important;filter: none !important;">
+
+          <div id="cb-connect-open-button-icp-message" style="display: none;">ICP</div>
+        <div id="cb-connect-open-button-move-button">
+</body>
+</html>
