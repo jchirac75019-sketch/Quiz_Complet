@@ -8478,6 +8478,57 @@ observer.observe(document.body, {
 });
         }
         
+         
+        // ───────────────────────────────────────────────────────────────
+        // Gestion du plein écran
+        // ───────────────────────────────────────────────────────────────
+        
+        function requestFullscreen() {
+            const elem = document.documentElement;
+            
+            if (elem.requestFullscreen) {
+                elem.requestFullscreen();
+            } else if (elem.webkitRequestFullscreen) {
+                elem.webkitRequestFullscreen();
+            } else if (elem.mozRequestFullScreen) {
+                elem.mozRequestFullScreen();
+            } else if (elem.msRequestFullscreen) {
+                elem.msRequestFullscreen();
+            }
+        }
+        
+        function exitFullscreen() {
+            if (document.exitFullscreen) {
+                document.exitFullscreen();
+            } else if (document.webkitExitFullscreen) {
+                document.webkitExitFullscreen();
+            } else if (document.mozCancelFullScreen) {
+                document.mozCancelFullScreen();
+            } else if (document.msExitFullscreen) {
+                document.msExitFullscreen();
+            }
+        }
+        
+        function isFullscreen() {
+            return document.fullscreenElement || 
+                   document.webkitFullscreenElement || 
+                   document.mozFullScreenElement || 
+                   document.msFullscreenElement;
+        }
+        
+        // Réactiver le plein écran si l'utilisateur le désactive
+        document.addEventListener('fullscreenchange', function() {
+            if (currentPage === 'quiz' && !isFullscreen()) {
+                setTimeout(requestFullscreen, 100);
+            }
+        });
+        
+        document.addEventListener('webkitfullscreenchange', function() {
+            if (currentPage === 'quiz' && !isFullscreen()) {
+                setTimeout(requestFullscreen, 100);
+            }
+        });
+
         // ملء قوائم السور
         function populateSurahSelectors() {
             const startSelect = document.getElementById('surah-start');
@@ -8586,12 +8637,28 @@ observer.observe(document.body, {
             });
             
             document.getElementById('start-quiz').addEventListener('click', startQuiz);
-            document.getElementById('home-btn').addEventListener('click', goHome);
-            document.getElementById('submit-answer').addEventListener('click', submitAnswer);
-            document.getElementById('next-question').addEventListener('click', nextQuestion);
-            document.getElementById('restart-quiz').addEventListener('click', goHome);
-        }
+            document.getElementById('home-btn').addEventListener('click', function() {
+                if (isFullscreen()) exitFullscreen();
+                goHome();
+            });
+            document.getElementById('submit-answer').addEventListener('click', function() {
+                if (currentPage === 'quiz' && !isFullscreen()) {
+                    requestFullscreen();
+                }
+                submitAnswer();
+            });
+            document.getElementById('next-question').addEventListener('click', function() {
+                if (currentPage === 'quiz' && !isFullscreen()) {
+                    requestFullscreen();
+                }
+                nextQuestion();
+            });
+            document.getElementById('restart-quiz').addEventListener('click', function() {
+                if (isFullscreen()) exitFullscreen();
+                goHome();
+            });
 
+        }
         
         // Mettre à jour l'état du bouton de démarrage
         function updateStartButtonState() {
@@ -8703,10 +8770,11 @@ function updateVerseInputs() {
             generateQuestions();
             updateStats();
             showPage('quiz');
+            requestFullscreen();
             showQuestion();
             startTimer();
         }
-        
+       
         // توليد الأسئلة
         function generateQuestions() {
             const totalVerses = calculateVerseCount();
@@ -9078,8 +9146,12 @@ function updateVerseInputs() {
                 optionDiv.textContent = displayText;
                 optionDiv.dataset.value = (typeof option === 'number') ? option.toString() : option;
                 optionDiv.addEventListener('click', function() {
+                    if (currentPage === 'quiz' && !isFullscreen()) {
+                        requestFullscreen();
+                    }
                     selectOption(this);
                 });
+
                 optionsContainer.appendChild(optionDiv);
             });
             
