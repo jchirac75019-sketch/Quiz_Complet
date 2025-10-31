@@ -1089,29 +1089,35 @@ select.form-control {
         
         .stats-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-            gap: var(--space-16);
+            grid-template-columns: repeat(3, 1fr);
+            gap: var(--space-8);
             margin: var(--space-16) 0;
+            flex-wrap: nowrap;
         }
         
         .stat-card {
             text-align: center;
-            padding: var(--space-12);
+            padding: var(--space-8);
             background: var(--color-surface);
             border-radius: var(--radius-base);
             border: 1px solid var(--color-border);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            min-height: 70px;
         }
         
         .stat-number {
-            font-size: var(--font-size-2xl);
+            font-size: var(--font-size-xl);
             font-weight: var(--font-weight-bold);
             color: var(--color-primary);
+            margin: 0;
         }
         
         .stat-label {
             font-size: var(--font-size-sm);
             color: var(--color-text-secondary);
-            margin-top: var(--space-4);
+            margin: 0;
         }
         
         .error-message {
@@ -1219,7 +1225,8 @@ select.form-control {
             }
             
             .stats-grid {
-                grid-template-columns: repeat(2, 1fr);
+                grid-template-columns: repeat(3, 1fr);
+                gap: var(--space-4);
             }
             
             .mode-selector {
