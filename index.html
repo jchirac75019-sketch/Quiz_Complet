@@ -8388,14 +8388,18 @@ const SAMPLE_VERSES = {
         
         function handleVisibilityChange() {
             if (document.hidden) {
+                // Page cachée : arrêter le chronomètre
                 quizState.isActive = false;
                 updateActiveTime();
             } else {
+                // Page visible : reprendre le chronomètre
                 quizState.isActive = true;
                 quizState.lastActiveTime = Date.now();
-                if (wakeLock === null) {
+                if (wakeLock === null && currentPage === 'quiz') {
                     requestWakeLock();
                 }
+                // Relancer le chronomètre
+                updateTimer();
             }
         }
         
@@ -8526,6 +8530,27 @@ observer.observe(document.body, {
         document.addEventListener('webkitfullscreenchange', function() {
             if (currentPage === 'quiz' && !isFullscreen()) {
                 setTimeout(requestFullscreen, 100);
+            }
+        });
+
+         
+        // ───────────────────────────────────────────────────────────────
+        // Prévention du rechargement pendant le quiz
+        // ───────────────────────────────────────────────────────────────
+        
+        window.addEventListener('beforeunload', function(e) {
+            if (currentPage === 'quiz' && quizState.questions.length > 0) {
+                e.preventDefault();
+                e.returnValue = '';
+                return '';
+            }
+        });
+        
+        // Prévenir les retours en arrière
+        history.pushState(null, null, location.href);
+        window.addEventListener('popstate', function() {
+            if (currentPage === 'quiz') {
+                history.pushState(null, null, location.href);
             }
         });
 
@@ -9254,16 +9279,28 @@ function updateVerseInputs() {
         }
         
         // بدء المؤقت
+        let timerInterval = null;
+        
         function startTimer() {
-            setInterval(updateTimer, 1000);
+            if (timerInterval) clearInterval(timerInterval);
+            timerInterval = setInterval(updateTimer, 1000);
+        }
+        
+        function stopTimer() {
+            if (timerInterval) {
+                clearInterval(timerInterval);
+                timerInterval = null;
+            }
         }
         
         // تحديث المؤقت
         function updateTimer() {
-            if (currentPage === 'quiz' && quizState.isActive) {
+            // Mettre à jour le temps actif seulement si la page est active et le quiz en cours
+            if (currentPage === 'quiz' && quizState.isActive && !document.hidden) {
                 updateActiveTime();
             }
             
+            // Afficher le chronomètre
             const timerElement = document.getElementById('timer');
             if (timerElement) {
                 const minutes = Math.floor(quizState.activeTime / 60000);
@@ -9274,6 +9311,7 @@ function updateVerseInputs() {
         
         // انتهاء الاختبار
         function endQuiz() {
+            stopTimer();
             quizState.endTime = new Date();
             updateActiveTime();
             showResults();
@@ -9387,6 +9425,9 @@ function updateVerseInputs() {
   // Masquer bouton السؤال التالي (ligne 1733)
   document.getElementById('next-question').classList.add('hidden');
 
+  // Arrêter le chronomètre
+  stopTimer();
+  
   // Actualiser bouton بدء الاختبار
   updateStartButtonState();
 }
